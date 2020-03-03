@@ -355,3 +355,21 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Needs Hero
+============= */
+#n-hero div {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60vh auto;
+  grid-template-areas: "." "header"; }
+  #n-hero div article {
+    grid-area: header; }
+
+/* =============
+    Needs Herd
+============= */
+#n-herd div {
+  display: flex;
+  flex-direction: column; }

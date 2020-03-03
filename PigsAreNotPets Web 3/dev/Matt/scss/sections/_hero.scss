@@ -1,0 +1,19 @@
+/* =============
+    Needs Hero
+============= */
+#n-hero {
+    div {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 60vh auto;
+        grid-template-areas: "." "header";
+
+        article {
+            grid-area: header;
+            h1 {}
+
+            h6 {}
+        }
+    }
+}
