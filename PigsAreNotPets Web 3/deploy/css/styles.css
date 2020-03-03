@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'HelveticaOT';
+  src: url("../fonts/HelveticaOT.woff2") format("woff2"), url("../fonts/HelveticaOT.woff") format("woff"); }
+
 /* =============
     Mixins
 ============= */
@@ -321,12 +325,88 @@ ul {
   ul li {
     list-style: none; }
 
+.section-content {
+  padding: 64px 0px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content ."; }
+  @media (min-width: 768px) {
+    .section-content {
+      padding: 160px 0px;
+      grid-template-columns: 40px auto 40px; } }
+  @media (min-width: 992px) {
+    .section-content {
+      padding: 200px 0px;
+      grid-template-columns: 64px auto 64px; } }
+  .section-content > div {
+    grid-area: content; }
+
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding: 0;
   margin: 0; }
+
+h1 {
+  font-family: 'HelveticaOT',sans-serif;
+  font-size: 3rem;
+  line-height: 4rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4.5rem;
+      line-height: 6.5rem; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 6.5rem;
+      line-height: 8rem; } }
+
+h2 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 1.75rem;
+      line-height: 2.5rem; } }
+
+h6 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+  @media (min-width: 992px) {
+    h6 {
+      font-size: 2rem;
+      line-height: 3rem; } }
+
+p {
+  font-family: "sofia-pro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem; }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.375rem;
+      line-height: 1.625rem; } }
+  p span {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.625rem; }
 
 /* =============
     Buttons
