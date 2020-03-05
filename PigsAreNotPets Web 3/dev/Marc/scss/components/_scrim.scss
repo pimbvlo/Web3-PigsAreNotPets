@@ -1,0 +1,35 @@
+/*
+* Future CSS (use it today with postCSS-easing-gradients - note your settings colorMode: 'lrgb' and colorStops: 15)
+*/
+.currentscrim {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(0,0%,33.33%,0),
+    cubic-bezier(0.45, 0.05, 0.55, 0.95),
+    hsl(0,0%,33.33%)
+  );
+}
+
+/*
+* Fallback CSS
+*/
+.fallbackscrim {
+  background-image: linear-gradient(
+      to bottom,
+    hsla(0,0%,33.33%,0) 0%,
+    hsla(0,0%,33.33%,0.0231049563) 9.13%,
+    hsla(0,0%,33.33%,0.0685131195) 17.35%,
+    hsla(0,0%,33.33%,0.1325072886) 24.8%,
+    hsla(0,0%,33.33%,0.2113702624) 31.63%,
+    hsla(0,0%,33.33%,0.3013848397) 38.01%,
+    hsla(0,0%,33.33%,0.3988338192) 44.08%,
+    hsla(0,0%,33.33%,0.5) 50%,
+    hsla(0,0%,33.33%,0.6011661808) 55.92%,
+    hsla(0,0%,33.33%,0.6986151603) 61.99%,
+    hsla(0,0%,33.33%,0.7886297376) 68.37%,
+    hsla(0,0%,33.33%,0.8674927114) 75.2%,
+    hsla(0,0%,33.33%,0.9314868805) 82.65%,
+    hsla(0,0%,33.33%,0.9768950437) 90.87%,
+    hsl(0,0%,33.33%) 100%
+  );
+}
