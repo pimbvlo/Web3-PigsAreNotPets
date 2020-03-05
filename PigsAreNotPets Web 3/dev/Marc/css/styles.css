@@ -359,6 +359,30 @@ ul li {
   list-style: none;
 }
 
+.section-content {
+  padding: 64px 0px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 768px) {
+  .section-content {
+    padding: 160px 0px;
+    grid-template-columns: 40px auto 40px;
+  }
+}
+@media (min-width: 992px) {
+  .section-content {
+    padding: 200px 0px;
+    grid-template-columns: 64px auto 64px;
+  }
+}
+.section-content > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
