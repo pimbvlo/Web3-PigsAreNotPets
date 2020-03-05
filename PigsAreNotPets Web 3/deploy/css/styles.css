@@ -371,7 +371,8 @@ h2 {
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  margin-bottom: 20px; }
   @media (min-width: 768px) {
     h2 {
       font-size: 1.5rem;
@@ -407,7 +408,9 @@ p {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.625rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px; }
 
 /* =============
     Buttons
@@ -460,6 +463,90 @@ textarea {
 /* =============
     Needs Herd
 ============= */
-#n-herd div {
-  display: flex;
-  flex-direction: column; }
+#n-herd {
+  padding: 64px 0;
+  position: relative;
+  margin-top: 80px; }
+  #n-herd div {
+    display: grid;
+    grid-template-rows: auto 50vw; }
+    @media (min-width: 768px) {
+      #n-herd div {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; } }
+    #n-herd div article {
+      margin: 0px 16px;
+      margin-bottom: 40px; }
+      @media (min-width: 768px) {
+        #n-herd div article {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0px 160px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0 30px 0 64px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
+    #n-herd div aside {
+      margin: 0px 16px;
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig1.jpg");
+      background-size: cover;
+      background-position: center;
+      width: auto;
+      height: 50vw; }
+      @media (min-width: 768px) {
+        #n-herd div aside {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div aside {
+          margin: 0px 160px; } }
+      @media (min-width: 768px) {
+        #n-herd div aside {
+          margin: auto 0;
+          height: 30vw; } }
+      #n-herd div aside::after {
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        background-color: #F2ECE2;
+        z-index: -1;
+        right: 0;
+        top: 0; }
+        @media (min-width: 768px) {
+          #n-herd div aside::after {
+            content: ''; } }
+
+/* =============
+    Needs space
+============= */
+#n-space {
+  margin-top: 80px;
+  position: relative;
+  background-color: #E3C68D; }
+  @media (min-width: 768px) {
+    #n-space div {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 992px) {
+    #n-space div {
+      grid-template-columns: 2fr 3fr; } }
+  #n-space div article {
+    padding: 40px 16px; }
+    @media (min-width: 768px) {
+      #n-space div article {
+        padding: 64px; } }
+    @media (min-width: 992px) {
+      #n-space div article {
+        padding: 160px 160px 160px 80px; } }
+  @media (min-width: 768px) {
+    #n-space div aside {
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig2.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%; } }

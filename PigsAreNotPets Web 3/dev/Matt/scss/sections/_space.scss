@@ -1,0 +1,41 @@
+/* =============
+    Needs space
+============= */
+#n-space {
+    margin-top: 80px;
+    position: relative;
+    background-color: $yellow;
+
+    div {
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        @include lg{
+        grid-template-columns: 2fr 3fr;
+        }
+        article {
+            // @include standard-margin;
+            padding: 40px 16px;
+            @include md{
+                padding: 64px;
+            }
+            @include lg{
+                padding: 160px 160px 160px 80px;
+            }
+        }
+
+
+        aside {
+            @include md {
+                background-repeat: no-repeat;
+                background-image: url("../img/needs/pig2.jpg");
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
