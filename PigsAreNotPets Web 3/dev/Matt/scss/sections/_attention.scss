@@ -1,0 +1,76 @@
+/* =============
+    Needs Attention
+============= */
+#n-attention {
+    margin-top: 80px;
+    @include md {
+        display: grid;
+        grid-template-areas: ". content .";
+        grid-template-columns: auto 540px auto;
+    }
+    @include lg {
+        grid-template-columns: auto 800px auto;
+    }
+
+    div {
+        @include md {
+            grid-area: content;
+            height: 600px;
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+        }
+        @include lg {
+            height: 800px;
+        }
+
+        aside {
+            background-image: url("../img/needs/pig3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vw;
+            width: 100vw;
+            @include md {
+                height: 275px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 400px;
+                z-index: -1;
+            }
+            @include lg {
+                height: 375px;
+                width: 500px;
+            }
+        }
+
+        article {
+            padding: 40px;
+            position: relative;
+            @include md {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 350px;
+                z-index: 10;
+            }
+
+            &::after {
+                background-color: $light-yellow;
+                content: '';
+                display: block;
+                height: 60%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+                @include md {
+                    height: 100%;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

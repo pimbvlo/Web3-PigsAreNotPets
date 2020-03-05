@@ -68,6 +68,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/needs/pig3.jpg": {
+		"ft": 16384,
+		"iS": 32591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/needs/pig3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/needs/pig4.jpg": {
+		"ft": 16384,
+		"iS": 27225,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/needs/pig4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
