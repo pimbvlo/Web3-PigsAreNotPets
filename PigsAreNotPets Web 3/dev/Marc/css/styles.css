@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "HelveticaOT";
+  src: url("../fonts/HelveticaOT.woff2") format("woff2"), url("../fonts/HelveticaOT.woff") format("woff");
+}
 /* =============
     Mixins
 ============= */
