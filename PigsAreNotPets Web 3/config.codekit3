@@ -19,6 +19,33 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/fonts/HelveticaOT.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/fonts/HelveticaOT.woff",
+		"oF": 0
+		},
+	"/deploy/fonts/HelveticaOT.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/fonts/HelveticaOT.woff2",
+		"oF": 0
+		},
+	"/deploy/img/needs/heropig.jpg": {
+		"ft": 16384,
+		"iS": 235294,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/needs/heropig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/needs/Pig2.jpg": {
 		"ft": 16384,
 		"iS": 33103,

@@ -406,7 +406,8 @@ p {
   p span {
     font-weight: 700;
     font-size: 1rem;
-    line-height: 1.625rem; }
+    line-height: 1.625rem;
+    text-transform: uppercase; }
 
 /* =============
     Buttons
@@ -443,9 +444,18 @@ textarea {
   height: 100vh;
   display: grid;
   grid-template-rows: 60vh auto;
-  grid-template-areas: "." "header"; }
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: ". . ." ". title .";
+  background-repeat: no-repeat;
+  background-image: url("../img/needs/heropig.jpg");
+  background-size: cover;
+  background-position: 70%; }
   #n-hero div article {
-    grid-area: header; }
+    grid-area: title; }
+    #n-hero div article h1 {
+      color: #FCFCFC; }
+    #n-hero div article h6 {
+      color: #FCFCFC; }
 
 /* =============
     Needs Herd

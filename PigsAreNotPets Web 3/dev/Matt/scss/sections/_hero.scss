@@ -7,13 +7,18 @@
         height: 100vh;
         display: grid;
         grid-template-rows: 60vh auto;
-        grid-template-areas: "." "header";
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: ". . ." ". title .";
+        background-repeat: no-repeat;
+        background-image: url('../img/needs/heropig.jpg');
+        background-size: cover;
+        background-position: 70%;
 
         article {
-            grid-area: header;
-            h1 {}
+            grid-area: title;
+            h1 {color: $white}
 
-            h6 {}
+            h6 {color: $white}
         }
     }
 }
