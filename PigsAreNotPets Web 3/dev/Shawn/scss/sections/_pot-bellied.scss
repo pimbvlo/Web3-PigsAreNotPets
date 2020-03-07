@@ -1,0 +1,27 @@
+/* =============
+    Pot-Bellied
+============= */
+#section-3 {
+    background-color: $sanctuary-pink;
+    > div {
+        article {
+            h2 {}
+            >p{
+
+            }
+            p{
+                span{
+
+                }
+            }
+        }
+        figure{
+            background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: auto 120%;
+            height: 256px;
+            width: 100%;
+        }
+    }
+}

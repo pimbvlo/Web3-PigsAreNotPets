@@ -1,3 +1,167 @@
 /* =============
     Footer
 ============= */
+footer {
+    background-color: $charcoal;
+    position: relative;
+    overflow: hidden;
+
+    .colorBar {
+        // position: absolute;
+        // z-index: 10;
+        // top: 0px;
+        // right: 0px;
+
+        height: 16px;
+        background-color: $sanctuary-dark-pink;
+    }
+
+    article {
+        padding: 24px 0;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". footer-title ." ". footer-form .";
+        @include md {
+            // width: 672px;
+            grid-template-columns: auto 672px auto;
+        }
+        @include lg {
+            // width: 672px;
+            grid-template-columns: 112px 672px auto;
+            padding: 64px 0;
+
+        }
+
+        h2 {
+            color: $white;
+            grid-area: footer-title;
+            font-size: rem-calc(32);
+            @include lg {
+                font-size: rem-calc(48);
+            }
+
+        }
+
+        form {
+            margin-top: 24px;
+            grid-area: footer-form;
+            display: grid;
+            grid-gap: 8px;
+            grid-template-columns: auto auto;
+            grid-template-areas: "fullname fullname" "address address" "donation donation" "ccnum ccnum" "code code" "button .";
+            @include md {
+                grid-template-columns: auto 35% 20%;
+                grid-template-areas: "fullname address address" "donation ccnum code" "button . .";
+                grid-gap: 24px 16px;
+                margin-top: 40px;
+
+            }
+            @include md {
+                margin-top: 24px;
+                grid-gap: 24px 32px;
+
+
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: 32px auto;
+                grid-template-areas: "icon field";
+                padding-bottom: 8px;
+                border-bottom: $white 4px solid;
+                margin-bottom: 16px;
+
+                i {
+                    color: $white;
+                    padding: 8px;
+                    grid-area: icon;
+                    text-align: center;
+                    // width: 48px;
+                    font-size: rem-calc(24);
+                    @include md {
+                        font-size: rem-calc(16);
+                    }
+                }
+
+                input {
+                    color: $white;
+                    margin-left: 8px;
+                    font-family: "brandon-grotesque", sans-serif;
+                    grid-area: field;
+                    font-size: rem-calc(24);
+                    text-align: left;
+                    @include md {
+                        font-size: rem-calc(16);
+                    }
+                }
+
+                input::placeholder {
+                    color: $white;
+                    opacity: 0.9;
+                }
+            }
+
+            div:nth-child(1) {
+                grid-area: fullname;
+            }
+
+            div:nth-child(2) {
+                grid-area: address;
+            }
+
+            div:nth-child(3) {
+                grid-area: donation;
+            }
+
+            div:nth-child(4) {
+                grid-area: ccnum;
+            }
+
+            div:nth-child(5) {
+                grid-area: code;
+            }
+
+            button {
+                grid-area: button;
+                padding: 8px 40px;
+                margin-top: 16px;
+                width: 100%;
+                @include md {
+                    // margin-top: 40px;
+                }
+
+            }
+        }
+    }
+
+    svg {
+        position: absolute;
+        // z-index: 1;
+        bottom: -10px;
+        right: -350px;
+
+        width: 688px;
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+        stroke: $sanctuary-dark-pink;
+
+        @include md {
+            width: 752px;
+            bottom: -152px;
+            right: -256px;
+
+        }
+        @include lg {
+            width: 1200px;
+            top: 60px;
+            right: -456px;
+
+        }
+
+
+        g {
+            opacity: 0.2;
+        }
+    }
+}

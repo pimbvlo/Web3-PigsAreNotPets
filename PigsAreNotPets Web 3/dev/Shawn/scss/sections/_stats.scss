@@ -1,0 +1,25 @@
+/* =============
+    Stats
+============= */
+#section-2{
+    >div{
+        article{
+            h2{
+                color: $sanctuary-dark-pink;
+                text-align: center;
+                font-family: "sofia-pro", sans-serif;
+                font-weight: 400;
+                font-size: rem-calc(24);
+                line-height: rem-calc(30);
+                @include md{
+                    font-size: rem-calc(32);
+                    line-height: rem-calc(40);
+                }
+                @include lg{
+                    font-size: rem-calc(40);
+                    line-height: rem-calc(48);
+                }
+            }
+        }
+    }
+}
