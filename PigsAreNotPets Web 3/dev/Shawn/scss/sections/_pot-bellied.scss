@@ -5,18 +5,14 @@
     background-color: $sanctuary-pink;
     @include lg {
         height: 352px;
-        padding: 80px 0px;
+        padding: 80px 0;
         grid-template-columns: auto 832px auto;
-
         margin-bottom: 192px;
-
     }
-
 
     > div {
         @include md {
             display: grid;
-
             grid-template-columns: 400px auto;
             grid-template-areas: "article aside";
         }
@@ -27,7 +23,7 @@
             z-index: 100;
             padding-bottom: 56px;
             @include md {
-                padding: 0px;
+                padding: 0;
             }
 
             h2 {
@@ -35,7 +31,6 @@
                 @include md {
                     padding-bottom: 16px;
                 }
-
             }
 
             > p {}
@@ -49,19 +44,15 @@
 
         aside {
             grid-area: aside;
-
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0.75;
-            margin-top: 0px;
-
-
-
-            @include md{
+            margin-top: 0;
+            @include md {
                 position: relative;
-
             }
+
             figure {
                 background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
                 background-position: top center;
@@ -69,7 +60,6 @@
                 background-size: auto 120%;
                 height: 256px;
                 width: 100%;
-
                 @include md {
                     position: absolute;
                     right: 0;

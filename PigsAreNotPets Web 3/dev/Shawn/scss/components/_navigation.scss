@@ -34,7 +34,6 @@ nav {
                 margin-bottom: 16px;
                 text-decoration: none;
                 color: $white;
-
                 @include md {
                     font-size: rem-calc(32);
                     margin-bottom: 24px;
@@ -42,14 +41,12 @@ nav {
                 @include lg {
                     font-size: rem-calc(40);
                     margin-bottom: 32px;
-
                 }
+
                 a {
                     text-decoration: none;
                     color: $white;
-
                 }
-
             }
 
             button:hover {

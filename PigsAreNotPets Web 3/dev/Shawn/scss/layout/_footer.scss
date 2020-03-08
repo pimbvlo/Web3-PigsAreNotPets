@@ -11,13 +11,12 @@ footer {
         // z-index: 10;
         // top: 0px;
         // right: 0px;
-
         height: 16px;
         background-color: $sanctuary-dark-pink;
     }
 
     article {
-        margin: 40px 0px;
+        margin: 40px 0;
         padding: 24px 0;
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -30,7 +29,6 @@ footer {
             // width: 672px;
             grid-template-columns: 112px 672px auto;
             padding: 64px 0;
-
         }
 
         h2 {
@@ -40,7 +38,6 @@ footer {
             @include lg {
                 font-size: rem-calc(48);
             }
-
         }
 
         form {
@@ -56,13 +53,10 @@ footer {
                 grid-template-areas: "fullname address address" "donation ccnum code" "button . .";
                 grid-gap: 24px 16px;
                 margin-top: 40px;
-
             }
             @include md {
                 margin-top: 24px;
                 grid-gap: 24px 32px;
-
-
             }
 
             div {
@@ -132,7 +126,6 @@ footer {
                 @include md {
                     // margin-top: 40px;
                 }
-
             }
         }
     }
@@ -142,26 +135,21 @@ footer {
         z-index: 0;
         bottom: -10px;
         right: -350px;
-
         width: 704px;
         fill: none;
         stroke-miterlimit: 10;
         stroke-width: 8px;
         stroke: $sanctuary-dark-pink;
-
         @include md {
             width: 768px;
             bottom: -104px;
             right: -256px;
-
         }
         @include lg {
             width: 1200px;
             top: 60px;
             right: -400px;
-
         }
-
 
         g {
             opacity: 0.2;

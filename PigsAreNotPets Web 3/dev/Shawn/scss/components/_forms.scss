@@ -16,11 +16,10 @@
 [type='url'],
 [type='color'],
 textarea {
-	box-shadow: none;
-	border: none;
 	background-color: $blank;
+	border: none;
+	box-shadow: none;
 	color: $white;
-
 }
 
 [type='text']:focus,
@@ -38,12 +37,10 @@ textarea {
 [type='url']:focus,
 [type='color']:focus,
 textarea:focus {
-	box-shadow: none;
-	border: none;
 	background-color: $blank;
+	border: none;
+	box-shadow: none;
 	color: $white;
-
-
 }
 
 input[type=email],

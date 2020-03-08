@@ -5,23 +5,20 @@
     position: fixed;
     height: 50px;
     width: 80vw;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     z-index: 150;
     background-color: $charcoal;
     overflow: hidden;
-
 
     svg {
         // transform: rotate(45deg);
         background-color: $blank;
 
-        circle{
-
+        circle {
             fill: $charcoal;
         }
     }
-
     // >div{
     //     // border-radius: 50%;
     //     height: 100%;
