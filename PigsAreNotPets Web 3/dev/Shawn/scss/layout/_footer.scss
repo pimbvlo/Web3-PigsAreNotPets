@@ -17,6 +17,7 @@ footer {
     }
 
     article {
+        margin: 40px 0px;
         padding: 24px 0;
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -43,6 +44,7 @@ footer {
         }
 
         form {
+            z-index: 100;
             margin-top: 24px;
             grid-area: footer-form;
             display: grid;
@@ -123,6 +125,7 @@ footer {
 
             button {
                 grid-area: button;
+                font-weight: 700;
                 padding: 8px 40px;
                 margin-top: 16px;
                 width: 100%;
@@ -136,26 +139,26 @@ footer {
 
     svg {
         position: absolute;
-        // z-index: 1;
+        z-index: 0;
         bottom: -10px;
         right: -350px;
 
-        width: 688px;
+        width: 704px;
         fill: none;
         stroke-miterlimit: 10;
         stroke-width: 8px;
         stroke: $sanctuary-dark-pink;
 
         @include md {
-            width: 752px;
-            bottom: -152px;
+            width: 768px;
+            bottom: -104px;
             right: -256px;
 
         }
         @include lg {
             width: 1200px;
             top: 60px;
-            right: -456px;
+            right: -400px;
 
         }
 

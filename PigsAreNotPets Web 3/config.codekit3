@@ -799,6 +799,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/Shawn/mini-pigs.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/mini-pigs.html",
+		"oF": 0
+		},
 	"/dev/Shawn/nav-background.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -830,6 +838,14 @@
 		"oA": 0,
 		"oAP": "/deploy/sanctuaries.html",
 		"oF": 2
+		},
+	"/dev/Shawn/sanctuary.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/sanctuary.html",
+		"oF": 0
 		},
 	"/dev/Shawn/scss/base/_base.scss": {
 		"aP": 0,
@@ -892,6 +908,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Shawn/scss/components/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/components/_nav-background.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/components/_nav-background.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -987,6 +1016,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shawn/scss/sections/_mini-pigs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_mini-pigs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Shawn/scss/sections/_pot-bellied.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -996,6 +1038,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Shawn/scss/sections/_pot-bellied.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/sections/_sanctuary.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_sanctuary.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -2,6 +2,9 @@
     Stats
 ============= */
 #section-2{
+    @include lg{
+        grid-template-columns: auto 640px auto;
+    }
     >div{
         article{
             h2{

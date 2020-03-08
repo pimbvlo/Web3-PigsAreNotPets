@@ -400,10 +400,14 @@ p {
   font-family: "sofia-pro", sans-serif;
   font-size: 1rem;
   line-height: 1.625rem; }
+  @media (min-width: 704px) {
+    p {
+      font-size: 1.125rem;
+      line-height: 1.75rem; } }
   @media (min-width: 992px) {
     p {
       font-size: 1.375rem;
-      line-height: 1.625rem; } }
+      line-height: 2rem; } }
   p span {
     font-weight: 700;
     font-size: 1rem;
@@ -510,7 +514,9 @@ nav {
       text-align: right;
       transition: 0.25s;
       width: 100%;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: #FCFCFC; }
       @media (min-width: 704px) {
         nav ul li h6 {
           font-size: 2rem;
@@ -518,18 +524,31 @@ nav {
       @media (min-width: 992px) {
         nav ul li h6 {
           font-size: 2.5rem;
-          margin-bottom: 32px; }
-          nav ul li h6 a {
-            text-decoration: none;
-            color: #FCFCFC; } }
+          margin-bottom: 32px; } }
+      nav ul li h6 a {
+        text-decoration: none;
+        color: #FCFCFC; }
     nav ul li button:hover {
       color: #262626; }
   nav ul li:nth-last-child(1) {
     margin-bottom: 0; }
 
+/* =============
+    Nav Background
+============= */
 #nav-bg {
+  position: fixed;
+  height: 50px;
+  width: 80vw;
+  top: 0px;
+  right: 0px;
+  z-index: 150;
   background-color: #262626;
-  width: 80vw; }
+  overflow: hidden; }
+  #nav-bg svg {
+    background-color: rgba(0, 0, 0, 0); }
+    #nav-bg svg circle {
+      fill: #262626; }
 
 /*
 * Future CSS (use it today with postCSS-easing-gradients - note your settings colorMode: 'lrgb' and colorStops: 15)
@@ -577,6 +596,7 @@ footer {
     height: 16px;
     background-color: #816A72; }
   footer article {
+    margin: 40px 0px;
     padding: 24px 0;
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -596,6 +616,7 @@ footer {
         footer article h2 {
           font-size: 3rem; } }
     footer article form {
+      z-index: 100;
       margin-top: 24px;
       grid-area: footer-form;
       display: grid;
@@ -653,28 +674,30 @@ footer {
         grid-area: code; }
       footer article form button {
         grid-area: button;
+        font-weight: 700;
         padding: 8px 40px;
         margin-top: 16px;
         width: 100%; }
   footer svg {
     position: absolute;
+    z-index: 0;
     bottom: -10px;
     right: -350px;
-    width: 688px;
+    width: 704px;
     fill: none;
     stroke-miterlimit: 10;
     stroke-width: 8px;
     stroke: #816A72; }
     @media (min-width: 704px) {
       footer svg {
-        width: 752px;
-        bottom: -152px;
+        width: 768px;
+        bottom: -104px;
         right: -256px; } }
     @media (min-width: 992px) {
       footer svg {
         width: 1200px;
         top: 60px;
-        right: -456px; } }
+        right: -400px; } }
     footer svg g {
       opacity: 0.2; }
 
@@ -692,9 +715,9 @@ footer {
   @media (min-width: 704px) {
     #section-1 {
       background-position: center; } }
-  @media (min-width: 704px) {
+  @media (min-width: 992px) {
     #section-1 {
-      background-size: 104%; } }
+      background-size: 104% auto; } }
   #section-1 > div {
     width: 100%;
     height: 280px;
@@ -720,6 +743,10 @@ footer {
 /* =============
     Stats
 ============= */
+@media (min-width: 992px) {
+  #section-2 {
+    grid-template-columns: auto 640px auto; } }
+
 #section-2 > div article h2 {
   color: #816A72;
   text-align: center;
@@ -741,10 +768,192 @@ footer {
 ============= */
 #section-3 {
   background-color: #FFF3F3; }
-  #section-3 > div figure {
-    background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: auto 120%;
-    height: 256px;
-    width: 100%; }
+  @media (min-width: 992px) {
+    #section-3 {
+      height: 352px;
+      padding: 80px 0px;
+      grid-template-columns: auto 832px auto;
+      margin-bottom: 192px; } }
+  @media (min-width: 704px) {
+    #section-3 > div {
+      display: grid;
+      grid-template-columns: 400px auto;
+      grid-template-areas: "article aside"; } }
+  #section-3 > div article {
+    color: #262626;
+    grid-area: article;
+    z-index: 100;
+    padding-bottom: 56px; }
+    @media (min-width: 704px) {
+      #section-3 > div article {
+        padding: 0px; } }
+    #section-3 > div article h2 {
+      padding-bottom: 24px; }
+      @media (min-width: 704px) {
+        #section-3 > div article h2 {
+          padding-bottom: 16px; } }
+    #section-3 > div article p:nth-child(3) {
+      padding-top: 32px; }
+  #section-3 > div aside {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    margin-top: 0px; }
+    @media (min-width: 704px) {
+      #section-3 > div aside {
+        position: relative; } }
+    #section-3 > div aside figure {
+      background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: auto 120%;
+      height: 256px;
+      width: 100%; }
+      @media (min-width: 704px) {
+        #section-3 > div aside figure {
+          position: absolute;
+          right: 0;
+          bottom: -32px;
+          z-index: 50;
+          width: 60vw; } }
+      @media (min-width: 992px) {
+        #section-3 > div aside figure {
+          right: 0;
+          bottom: -160px;
+          width: 472px;
+          height: 400px; } }
+
+/* =============
+    Sanctuary
+============= */
+@media (min-width: 704px) {
+  #section-4 {
+    margin: 64px 40px 280px; } }
+
+@media (min-width: 992px) {
+  #section-4 {
+    margin: 64px 160px 400px; } }
+
+#section-4 > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "article" "figure"; }
+  @media (min-width: 704px) {
+    #section-4 > div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "article figure"; } }
+  #section-4 > div article {
+    grid-area: article;
+    background-color: rgba(242, 236, 226, 0.7);
+    z-index: 100; }
+    @media (min-width: 704px) {
+      #section-4 > div article {
+        width: 60vw;
+        padding: 0; } }
+    @media (min-width: 992px) {
+      #section-4 > div article {
+        width: 56vw; } }
+    @media (min-width: 704px) {
+      #section-4 > div article > div {
+        padding: 40px 0; } }
+    #section-4 > div article > div h2 {
+      margin-bottom: 24px; }
+      @media (min-width: 704px) {
+        #section-4 > div article > div h2 {
+          margin-bottom: 16px; } }
+    #section-4 > div article > div p:nth-child(3) {
+      padding-top: 32px; }
+  #section-4 > div aside {
+    position: relative;
+    grid-area: figure; }
+    @media (min-width: 704px) {
+      #section-4 > div aside {
+        display: initial; } }
+    #section-4 > div aside figure {
+      background-image: url("../img/Sanctuaries/Sanctuaries/Sanctuaries.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: auto 120%;
+      display: none; }
+      @media (min-width: 704px) {
+        #section-4 > div aside figure {
+          background-size: cover;
+          background-position: center;
+          display: initial;
+          position: absolute;
+          right: 0;
+          margin-top: 224px;
+          z-index: 50;
+          width: 55vw;
+          height: 400px; } }
+      @media (min-width: 992px) {
+        #section-4 > div aside figure {
+          margin-left: 80px;
+          margin-top: 352px;
+          width: 60vw;
+          height: 400px; } }
+
+/* =============
+    Mini-Pigs
+============= */
+#section-5 {
+  margin-bottom: 64px;
+  background-color: #1A0009; }
+  @media (min-width: 704px) {
+    #section-5 {
+      margin-bottom: 96px; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      margin-bottom: 200px; } }
+  #section-5 > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "aside" "article"; }
+    @media (min-width: 704px) {
+      #section-5 > div {
+        grid-template-columns: auto 50%;
+        grid-template-areas: "aside article"; } }
+    @media (min-width: 992px) {
+      #section-5 > div {
+        grid-template-columns: auto 40%; } }
+    #section-5 > div aside {
+      grid-area: aside; }
+      #section-5 > div aside figure {
+        opacity: 0.85;
+        background-image: url("../img/Sanctuaries/MiniPigs/MiniPig.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        width: 100%; }
+        @media (min-width: 704px) {
+          #section-5 > div aside figure {
+            height: 100%;
+            background-position: 80% center; } }
+    #section-5 > div article {
+      grid-area: article;
+      padding: 64px 0px;
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content ."; }
+      @media (min-width: 704px) {
+        #section-5 > div article {
+          padding: 80px 0px;
+          grid-template-columns: 40px auto 40px; } }
+      @media (min-width: 992px) {
+        #section-5 > div article {
+          padding: 120px 0px;
+          grid-template-columns: 80px auto 80px; } }
+      #section-5 > div article > div {
+        grid-area: content; }
+      #section-5 > div article div {
+        color: #FCFCFC; }
+        #section-5 > div article div h2 {
+          padding-bottom: 24px; }
+          @media (min-width: 704px) {
+            #section-5 > div article div h2 {
+              padding-bottom: 16px; } }
+        #section-5 > div article div p:nth-child(3) {
+          padding-top: 32px; }

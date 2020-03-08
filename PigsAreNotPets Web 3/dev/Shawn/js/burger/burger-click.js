@@ -12,8 +12,8 @@ lineToLines.to("#top-line",{duration:burgerSpeed, y:0},"move-lines")
 
 
 var staggerNav = gsap.timeline({paused:true});
-staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/8), scale: 35, alpha: 0.98})
-.to("#nav-bg", {duration: burgerSpeed, backgroundColor:"#FF5D00", alpha: 1}, "-=burgerSpeed")
+staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/8), scale: 40, alpha: 0.95})
+.to("#nav-bg svg circle", {duration: burgerSpeed, alpha: 0.95}, "-=burgerSpeed")
 .to("nav ul li", {duration:burgerSpeed/4, stagger:0.1, alpha:1, y: 10, display:"initial"}, "-=0.15");
 
 $('#burger-container').on("click", burgerClicked);

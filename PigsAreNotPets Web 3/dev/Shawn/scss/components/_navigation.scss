@@ -32,6 +32,9 @@ nav {
                 transition: 0.25s;
                 width: 100%;
                 margin-bottom: 16px;
+                text-decoration: none;
+                color: $white;
+
                 @include md {
                     font-size: rem-calc(32);
                     margin-bottom: 24px;
@@ -40,12 +43,13 @@ nav {
                     font-size: rem-calc(40);
                     margin-bottom: 32px;
 
-                    a {
-                        text-decoration: none;
-                        color: $white;
-
-                    }
                 }
+                a {
+                    text-decoration: none;
+                    color: $white;
+
+                }
+
             }
 
             button:hover {
@@ -57,9 +61,4 @@ nav {
             margin-bottom: 0;
         }
     }
-}
-
-#nav-bg {
-    background-color: $charcoal;
-    width: 80vw;
 }

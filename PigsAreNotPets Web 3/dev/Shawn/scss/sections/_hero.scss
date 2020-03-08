@@ -12,8 +12,8 @@
     @include md{
         background-position: center;
     }
-    @include md{
-        background-size: 104%;
+    @include lg{
+        background-size: 104% auto;
     }
 
     >div{
