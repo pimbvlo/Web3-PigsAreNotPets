@@ -19,6 +19,140 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/fonts/HelveticaOT.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/fonts/HelveticaOT.woff",
+		"oF": 0
+		},
+	"/deploy/fonts/HelveticaOT.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/fonts/HelveticaOT.woff2",
+		"oF": 0
+		},
+	"/deploy/img/Global/Footer/Outline.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Global/Footer/Outline.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Global/Header/Logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Global/Header/Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Home/PigsNotPets.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Home/PigsNotPets.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Sanctuaries/Hero/Hero.jpg": {
+		"ft": 16384,
+		"iS": 116682,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Hero/Hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Hero/Hero@2x.jpg": {
+		"ft": 16384,
+		"iS": 292303,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Hero/Hero@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/MiniPigs/MiniPig.jpg": {
+		"ft": 16384,
+		"iS": 106299,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/MiniPigs/MiniPig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/MiniPigs/MiniPig@2x.jpg": {
+		"ft": 16384,
+		"iS": 291623,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/MiniPigs/MiniPig@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/PotBellied/PotBelly.jpg": {
+		"ft": 16384,
+		"iS": 176513,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/PotBellied/PotBelly.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/PotBellied/PotBelly@2x.jpg": {
+		"ft": 16384,
+		"iS": 441979,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/PotBellied/PotBelly@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries.jpg": {
+		"ft": 16384,
+		"iS": 63639,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries@2x.jpg": {
+		"ft": 16384,
+		"iS": 137100,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -386,6 +520,38 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shared/case-studies.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/case-studies.html",
+		"oF": 0
+		},
+	"/dev/Shared/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/footer.html",
+		"oF": 0
+		},
+	"/dev/Shared/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/header.html",
+		"oF": 0
+		},
+	"/dev/Shared/hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/hero.html",
+		"oF": 0
+		},
 	"/dev/Shared/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -393,6 +559,61 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/Shared/js/burger/burger-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/burger/burger-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shared/js/burger/burger-mouseenter.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/burger/burger-mouseenter-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shared/js/burger/burger-mouseleave.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/burger/burger-mouseleave-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shared/js/burger/burger.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/burger/burger-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shared/js/navigation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/Shared/js/scripts.js": {
 		"bF": 0,
@@ -404,6 +625,33 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/Shared/js/waypoints.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shared/js/waypoints-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shared/nav-background.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/nav-background.html",
+		"oF": 0
+		},
+	"/dev/Shared/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/navigation.html",
+		"oF": 0
 		},
 	"/dev/Shared/scss/base/_base.scss": {
 		"aP": 0,
@@ -470,6 +718,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shared/scss/components/_nav-background.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/scss/components/_nav-background.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Shared/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -479,6 +740,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Shared/scss/components/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shared/scss/components/_scrim.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/scss/components/_scrim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -535,6 +809,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shared/scss/sections/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/scss/sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Shared/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -547,6 +834,14 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/dev/Shared/thoughts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shared/thoughts.html",
+		"oF": 0
 		},
 	"/dev/Shawn/js/scripts.js": {
 		"bF": 0,
@@ -2201,7 +2496,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, ",
+	"jsCheckerReservedNamesString": "gsap, ScrollToPlugin, Waypoint, Inview, notify, scrollDirection",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

@@ -13,9 +13,12 @@
 @import "components/_buttons";
 @import "components/_forms";
 @import "components/_navigation";
+@import "components/_nav-background";
+@import "components/_scrim";
 
 // Layout Styles
 @import "layout/_header";
 @import "layout/_footer";
 
 // Sections Styles
+@import "sections/_hero";

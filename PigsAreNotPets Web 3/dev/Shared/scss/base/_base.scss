@@ -1,18 +1,35 @@
 /* =============
     Base
 ============= */
-figure{
-    padding: 0;
+figure {
     margin: 0;
+    padding: 0;
 }
 
-ul{
-    padding: 0;
+ul {
     margin: 0;
-    li{
+    padding: 0;
+
+    li {
         list-style: none;
     }
 }
 
+.section-content {
+    display: grid;
+    grid-template-areas: ". content .";
+    grid-template-columns: 16px auto 16px;
+    padding: 64px 0;
+    @include md {
+        grid-template-columns: 40px auto 40px;
+        padding: 160px 0;
+    }
+    @include lg {
+        grid-template-columns: 64px auto 64px;
+        padding: 200px 0;
+    }
 
-// SHARED SASS FILES
+    > div {
+        grid-area: content;
+    }
+}
