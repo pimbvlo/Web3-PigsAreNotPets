@@ -715,7 +715,7 @@ main {
     z-index: 100;
     left: 0;
     opacity: 0.1;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     white-space: nowrap; }
     @media (min-width: 704px) {
@@ -725,23 +725,39 @@ main {
       main > h1 {
         font-size: 25rem; } }
 
-#n-hero div {
-  width: 100vw;
-  height: 95vh;
-  display: grid;
-  grid-template-rows: 60vh auto;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: ". . ." ". title .";
+#n-hero {
+  display: flex;
+  align-items: flex-end;
   background-repeat: no-repeat;
   background-image: url("../img/needs/heropig.jpg");
   background-size: cover;
-  background-position: 70%; }
-  #n-hero div article {
-    grid-area: title; }
-    #n-hero div article h1 {
-      color: #FCFCFC; }
-    #n-hero div article h6 {
-      color: #FCFCFC; }
+  background-position: 70%;
+  width: 100vw;
+  height: 95vh;
+  position: relative; }
+  #n-hero > div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". . ." ". title ."; }
+    #n-hero > div > div {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 250px;
+      opacity: .8; }
+    #n-hero > div article {
+      grid-area: title;
+      position: static;
+      z-index: 20;
+      margin-bottom: 20px; }
+      #n-hero > div article h1 {
+        color: #FCFCFC; }
+      #n-hero > div article h6 {
+        color: #FCFCFC; }
 
 /* =============
     Needs Herd

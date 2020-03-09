@@ -39,7 +39,7 @@
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/deploy/img/Global/Header/Logo.svg",
+		"oAP": "/deploy/img/global/header/logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -396,6 +396,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/Matt/js/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Matt/js/rellax.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Matt/js/rellax-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2559,7 +2570,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, ScrollToPlugin, Waypoint, Inview, notify, scrollDirection",
+	"jsCheckerReservedNamesString": "gsap, ScrollToPlugin, Waypoint, Inview, notify, scrollDirection, rellax, Rellax",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
