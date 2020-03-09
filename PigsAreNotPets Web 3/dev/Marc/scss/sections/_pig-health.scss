@@ -65,6 +65,33 @@
     margin-bottom: -435px;
   }
 
+
+    div {
+      position: relative;
+      background-image: url("../img/sick-pig.png");
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      top: -90px;
+      @include md {
+        // position: relative;
+        top: -645px;
+        background-size: 45%;
+        height: 80vh;
+        left: 250px;
+        z-index: 5;
+      }
+      @include lg{
+        background-size: 35%;
+        left: 417px;
+        padding-top: 70px;
+        margin-top: 70px;
+        // margin-left: 100px;
+        // top: 2px;
+      }
+    }
+
   #health-tablet-bg {
     display: none;
     @include md{
@@ -80,38 +107,14 @@
       }
     @include lg{
       height: 70vh;
-      width: 30vw;
-      top: 1120px;
-      right: 0px;
+      width: 25vw;
+      top: 1060px;
+      // padding-right: -300px;
+      // right: -00px;
       // left: 0px;
     }
   }
 
 
 
-  div {
-    position: relative;
-    background-image: url("../img/sick-pig.png");
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-    top: -90px;
-    @include md {
-      // position: relative;
-      top: -645px;
-      background-size: 45%;
-      height: 80vh;
-      left: 250px;
-      z-index: 5;
-    }
-    @include lg{
-      background-size: 32%;
-      left: 445px;
-      // top: 0;
-      top: -400px;
-      // bottom: -100px;
-      // height: 100vh;
-    }
-  }
 }
