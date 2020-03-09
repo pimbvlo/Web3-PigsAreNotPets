@@ -1,14 +1,14 @@
 /* =============
     Hero
 ============= */
-#section-1 {
+#s-section-1 {
     align-items: flex-end;
     background-image: url("../img/Sanctuaries/Hero/Hero.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 90vh;
+    height: 95vh;
     @include md {
         background-position: center;
     }

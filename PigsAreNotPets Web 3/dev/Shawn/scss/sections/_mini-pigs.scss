@@ -1,7 +1,7 @@
 /* =============
     Mini-Pigs
 ============= */
-#section-5 {
+#s-section-5 {
     background-color: $sanctuary-shadow-pink;
     margin-bottom: 64px;
     @include md {
@@ -21,6 +21,9 @@
         }
         @include lg {
             grid-template-columns: auto 40%;
+        }
+        @include xl {
+            grid-template-columns: 50% auto;
         }
 
         aside {
@@ -55,6 +58,10 @@
                 grid-template-columns: 80px auto 80px;
                 padding: 120px 0;
             }
+            @include lg {
+                grid-template-columns: 80px auto 280px;
+                padding: 120px 0;
+            }
 
             > div {
                 grid-area: content;
@@ -75,7 +82,13 @@
                 p:nth-child(3) {
                     padding-top: 32px;
 
-                    span {}
+                    a:link, a:visited{
+                        color: $sanctuary-pink;
+
+                    }
+                    a:hover, a:active{
+                        border-bottom: 4px solid $sanctuary-pink;
+                    }
                 }
             }
         }

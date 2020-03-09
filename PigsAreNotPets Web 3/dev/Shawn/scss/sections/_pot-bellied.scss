@@ -1,13 +1,16 @@
 /* =============
     Pot-Bellied
 ============= */
-#section-3 {
+#s-section-3 {
     background-color: $sanctuary-pink;
     @include lg {
         height: 352px;
         padding: 80px 0;
         grid-template-columns: auto 832px auto;
         margin-bottom: 192px;
+    }
+    @include xl {
+        margin-bottom: 400px;
     }
 
     > div {
@@ -38,7 +41,13 @@
             p:nth-child(3) {
                 padding-top: 32px;
 
-                span {}
+                a:link, a:visited{
+                    color: $sanctuary-shadow-pink;
+
+                }
+                a:hover, a:active{
+                    border-bottom: 4px solid $sanctuary-shadow-pink;
+                }
             }
         }
 
@@ -73,6 +82,13 @@
                     width: 472px;
                     height: 400px;
                 }
+                @include xl {
+                    top: 160px;
+
+                    width: 504px;
+                    height: 504px;
+                }
+
             }
         }
     }

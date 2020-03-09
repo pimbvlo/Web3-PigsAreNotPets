@@ -1,12 +1,15 @@
 /* =============
     Sanctuary
 ============= */
-#section-4 {
+#s-section-4 {
     @include md {
         margin: 64px 40px 280px;
     }
     @include lg {
         margin: 64px 160px 400px;
+    }
+    @include xl {
+        margin: 64px 304px 600px;
     }
 
     > div {
@@ -31,6 +34,9 @@
             @include lg {
                 width: 56vw;
             }
+            @include xl {
+                width: 40vw;
+            }
 
             > div {
                 @include md {
@@ -49,7 +55,13 @@
                 p:nth-child(3) {
                     padding-top: 32px;
 
-                    span {}
+                    a:link, a:visited{
+                        color: $sanctuary-shadow-pink;
+
+                    }
+                    a:hover, a:active{
+                        border-bottom: 4px solid $sanctuary-shadow-pink;
+                    }
                 }
             }
         }
@@ -83,6 +95,10 @@
                     margin-top: 352px;
                     width: 60vw;
                     height: 400px;
+                }
+                @include xl {
+                    width: 30vw;
+                    height: 600px;
                 }
             }
         }

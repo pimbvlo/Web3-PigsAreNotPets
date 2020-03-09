@@ -5,6 +5,8 @@
 // @codekit-prepend "burger/burger-mouseleave.js";
 // @codekit-prepend "burger/burger-click.js";
 
+// @codekit-prepend "rellax.js";
+
 // @codekit-prepend "waypoints.js";
 
 

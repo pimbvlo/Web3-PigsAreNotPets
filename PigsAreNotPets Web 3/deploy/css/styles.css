@@ -46,7 +46,7 @@ main {
     z-index: 100;
     left: -50;
     opacity: 0.1;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     white-space: nowrap; }
     @media (min-width: 704px) {
@@ -429,10 +429,6 @@ p {
     p {
       font-size: 1.375rem;
       line-height: 2rem; } }
-  p span {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.625rem; }
 
 /* =============
     Buttons
@@ -726,40 +722,40 @@ footer {
 /* =============
     Hero
 ============= */
-#section-1 {
+#s-section-1 {
   align-items: flex-end;
   background-image: url("../img/Sanctuaries/Hero/Hero.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 90vh; }
+  height: 95vh; }
   @media (min-width: 704px) {
-    #section-1 {
+    #s-section-1 {
       background-position: center; } }
   @media (min-width: 992px) {
-    #section-1 {
+    #s-section-1 {
       background-size: 104% auto; } }
-  #section-1 > div {
+  #s-section-1 > div {
     align-items: flex-end;
     display: flex;
     height: 280px;
     padding: 0 24px 40px;
     width: 100%; }
     @media (min-width: 704px) {
-      #section-1 > div {
+      #s-section-1 > div {
         height: 328px;
         padding: 0; } }
-    #section-1 > div article {
+    #s-section-1 > div article {
       padding-top: 4px; }
       @media (min-width: 704px) {
-        #section-1 > div article {
+        #s-section-1 > div article {
           margin: 0 auto 56px 104px;
           padding: 0; } }
       @media (min-width: 992px) {
-        #section-1 > div article {
+        #s-section-1 > div article {
           margin: 64px 96px; } }
-      #section-1 > div article h1 {
+      #s-section-1 > div article h1 {
         color: #FCFCFC; }
 
 /* =============
@@ -788,35 +784,42 @@ footer {
 /* =============
     Pot-Bellied
 ============= */
-#section-3 {
+#s-section-3 {
   background-color: #FFF3F3; }
   @media (min-width: 992px) {
-    #section-3 {
+    #s-section-3 {
       height: 352px;
       padding: 80px 0;
       grid-template-columns: auto 832px auto;
       margin-bottom: 192px; } }
+  @media (min-width: 1280px) {
+    #s-section-3 {
+      margin-bottom: 400px; } }
   @media (min-width: 704px) {
-    #section-3 > div {
+    #s-section-3 > div {
       display: grid;
       grid-template-columns: 400px auto;
       grid-template-areas: "article aside"; } }
-  #section-3 > div article {
+  #s-section-3 > div article {
     color: #262626;
     grid-area: article;
     z-index: 100;
     padding-bottom: 56px; }
     @media (min-width: 704px) {
-      #section-3 > div article {
+      #s-section-3 > div article {
         padding: 0; } }
-    #section-3 > div article h2 {
+    #s-section-3 > div article h2 {
       padding-bottom: 24px; }
       @media (min-width: 704px) {
-        #section-3 > div article h2 {
+        #s-section-3 > div article h2 {
           padding-bottom: 16px; } }
-    #section-3 > div article p:nth-child(3) {
+    #s-section-3 > div article p:nth-child(3) {
       padding-top: 32px; }
-  #section-3 > div aside {
+      #s-section-3 > div article p:nth-child(3) a:link, #s-section-3 > div article p:nth-child(3) a:visited {
+        color: #1A0009; }
+      #s-section-3 > div article p:nth-child(3) a:hover, #s-section-3 > div article p:nth-child(3) a:active {
+        border-bottom: 4px solid #1A0009; }
+  #s-section-3 > div aside {
     grid-area: aside;
     display: flex;
     align-items: center;
@@ -824,9 +827,9 @@ footer {
     opacity: 0.75;
     margin-top: 0; }
     @media (min-width: 704px) {
-      #section-3 > div aside {
+      #s-section-3 > div aside {
         position: relative; } }
-    #section-3 > div aside figure {
+    #s-section-3 > div aside figure {
       background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
       background-position: top center;
       background-repeat: no-repeat;
@@ -834,73 +837,89 @@ footer {
       height: 256px;
       width: 100%; }
       @media (min-width: 704px) {
-        #section-3 > div aside figure {
+        #s-section-3 > div aside figure {
           position: absolute;
           right: 0;
           bottom: -32px;
           z-index: 50;
           width: 60vw; } }
       @media (min-width: 992px) {
-        #section-3 > div aside figure {
+        #s-section-3 > div aside figure {
           right: 0;
           bottom: -160px;
           width: 472px;
           height: 400px; } }
+      @media (min-width: 1280px) {
+        #s-section-3 > div aside figure {
+          top: 160px;
+          width: 504px;
+          height: 504px; } }
 
 /* =============
     Sanctuary
 ============= */
 @media (min-width: 704px) {
-  #section-4 {
+  #s-section-4 {
     margin: 64px 40px 280px; } }
 
 @media (min-width: 992px) {
-  #section-4 {
+  #s-section-4 {
     margin: 64px 160px 400px; } }
 
-#section-4 > div {
+@media (min-width: 1280px) {
+  #s-section-4 {
+    margin: 64px 304px 600px; } }
+
+#s-section-4 > div {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas: "article" "figure"; }
   @media (min-width: 704px) {
-    #section-4 > div {
+    #s-section-4 > div {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "article figure"; } }
-  #section-4 > div article {
+  #s-section-4 > div article {
     grid-area: article;
     background-color: rgba(242, 236, 226, 0.7);
     z-index: 100; }
     @media (min-width: 704px) {
-      #section-4 > div article {
+      #s-section-4 > div article {
         width: 60vw;
         padding: 0; } }
     @media (min-width: 992px) {
-      #section-4 > div article {
+      #s-section-4 > div article {
         width: 56vw; } }
+    @media (min-width: 1280px) {
+      #s-section-4 > div article {
+        width: 40vw; } }
     @media (min-width: 704px) {
-      #section-4 > div article > div {
+      #s-section-4 > div article > div {
         padding: 40px 0; } }
-    #section-4 > div article > div h2 {
+    #s-section-4 > div article > div h2 {
       margin-bottom: 24px; }
       @media (min-width: 704px) {
-        #section-4 > div article > div h2 {
+        #s-section-4 > div article > div h2 {
           margin-bottom: 16px; } }
-    #section-4 > div article > div p:nth-child(3) {
+    #s-section-4 > div article > div p:nth-child(3) {
       padding-top: 32px; }
-  #section-4 > div aside {
+      #s-section-4 > div article > div p:nth-child(3) a:link, #s-section-4 > div article > div p:nth-child(3) a:visited {
+        color: #1A0009; }
+      #s-section-4 > div article > div p:nth-child(3) a:hover, #s-section-4 > div article > div p:nth-child(3) a:active {
+        border-bottom: 4px solid #1A0009; }
+  #s-section-4 > div aside {
     position: relative;
     grid-area: figure; }
     @media (min-width: 704px) {
-      #section-4 > div aside {
+      #s-section-4 > div aside {
         display: initial; } }
-    #section-4 > div aside figure {
+    #s-section-4 > div aside figure {
       background-image: url("../img/Sanctuaries/Sanctuaries/Sanctuaries.jpg");
       background-position: top center;
       background-repeat: no-repeat;
       background-size: auto 120%;
       display: none; }
       @media (min-width: 704px) {
-        #section-4 > div aside figure {
+        #s-section-4 > div aside figure {
           background-size: cover;
           background-position: center;
           display: initial;
@@ -911,38 +930,45 @@ footer {
           width: 55vw;
           height: 400px; } }
       @media (min-width: 992px) {
-        #section-4 > div aside figure {
+        #s-section-4 > div aside figure {
           margin-left: 80px;
           margin-top: 352px;
           width: 60vw;
           height: 400px; } }
+      @media (min-width: 1280px) {
+        #s-section-4 > div aside figure {
+          width: 30vw;
+          height: 600px; } }
 
 /* =============
     Mini-Pigs
 ============= */
-#section-5 {
+#s-section-5 {
   background-color: #1A0009;
   margin-bottom: 64px; }
   @media (min-width: 704px) {
-    #section-5 {
+    #s-section-5 {
       margin-bottom: 96px; } }
   @media (min-width: 992px) {
-    #section-5 {
+    #s-section-5 {
       margin-bottom: 200px; } }
-  #section-5 > div {
+  #s-section-5 > div {
     display: grid;
     grid-template-areas: "aside" "article";
     grid-template-columns: repeat(1, 1fr); }
     @media (min-width: 704px) {
-      #section-5 > div {
+      #s-section-5 > div {
         grid-template-areas: "aside article";
         grid-template-columns: auto 50%; } }
     @media (min-width: 992px) {
-      #section-5 > div {
+      #s-section-5 > div {
         grid-template-columns: auto 40%; } }
-    #section-5 > div aside {
+    @media (min-width: 1280px) {
+      #s-section-5 > div {
+        grid-template-columns: 50% auto; } }
+    #s-section-5 > div aside {
       grid-area: aside; }
-      #section-5 > div aside figure {
+      #s-section-5 > div aside figure {
         background-image: url("../img/Sanctuaries/MiniPigs/MiniPig.jpg");
         background-position: top center;
         background-repeat: no-repeat;
@@ -951,31 +977,39 @@ footer {
         opacity: 0.85;
         width: 100%; }
         @media (min-width: 704px) {
-          #section-5 > div aside figure {
+          #s-section-5 > div aside figure {
             background-position: 80% center;
             height: 100%; } }
-    #section-5 > div article {
+    #s-section-5 > div article {
       display: grid;
       grid-area: article;
       grid-template-areas: ". content .";
       grid-template-columns: 16px auto 16px;
       padding: 64px 0; }
       @media (min-width: 704px) {
-        #section-5 > div article {
+        #s-section-5 > div article {
           grid-template-columns: 40px auto 40px;
           padding: 80px 0; } }
       @media (min-width: 992px) {
-        #section-5 > div article {
+        #s-section-5 > div article {
           grid-template-columns: 80px auto 80px;
           padding: 120px 0; } }
-      #section-5 > div article > div {
+      @media (min-width: 992px) {
+        #s-section-5 > div article {
+          grid-template-columns: 80px auto 280px;
+          padding: 120px 0; } }
+      #s-section-5 > div article > div {
         grid-area: content; }
-      #section-5 > div article div {
+      #s-section-5 > div article div {
         color: #FCFCFC; }
-        #section-5 > div article div h2 {
+        #s-section-5 > div article div h2 {
           padding-bottom: 24px; }
           @media (min-width: 704px) {
-            #section-5 > div article div h2 {
+            #s-section-5 > div article div h2 {
               padding-bottom: 16px; } }
-        #section-5 > div article div p:nth-child(3) {
+        #s-section-5 > div article div p:nth-child(3) {
           padding-top: 32px; }
+          #s-section-5 > div article div p:nth-child(3) a:link, #s-section-5 > div article div p:nth-child(3) a:visited {
+            color: #FFF3F3; }
+          #s-section-5 > div article div p:nth-child(3) a:hover, #s-section-5 > div article div p:nth-child(3) a:active {
+            border-bottom: 4px solid #FFF3F3; }

@@ -8,6 +8,7 @@
   "repository": {},
   "dependencies": {
     "notify-js-lib": "^1.0.0",
+    "rellax": "^1.12.1",
     "waypoints": "^4.0.1"
   }
 }
