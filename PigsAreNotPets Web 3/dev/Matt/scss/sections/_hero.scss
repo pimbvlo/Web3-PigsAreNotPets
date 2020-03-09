@@ -1,25 +1,53 @@
 /* =============
     Needs Hero
 ============= */
-#n-hero {
+main {
+    position: relative;
 
+    > h1 {
+        font-size: rem-calc(150);
+        position: absolute;
+        display: block;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        z-index: 100;
+        left: 0;
+        opacity: 0.1;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        @include md {
+            font-size: rem-calc(250);
+        }
+        @include lg {
+            font-size: rem-calc(400);
+        }
+    }
+}
+
+#n-hero {
     div {
         width: 100vw;
-        height: 90vh;
+        height: 95vh;
         display: grid;
         grid-template-rows: 60vh auto;
         grid-template-columns: 10% 80% 10%;
         grid-template-areas: ". . ." ". title .";
         background-repeat: no-repeat;
-        background-image: url('../img/needs/heropig.jpg');
+        background-image: url("../img/needs/heropig.jpg");
         background-size: cover;
         background-position: 70%;
 
         article {
             grid-area: title;
-            h1 {color: $white}
 
-            h6 {color: $white}
+            h1 {
+                color: $white;
+            }
+
+            h6 {
+                color: $white;
+            }
         }
     }
 }

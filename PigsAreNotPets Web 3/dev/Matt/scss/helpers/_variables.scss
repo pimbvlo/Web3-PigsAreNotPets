@@ -7,7 +7,7 @@
 $screen-sm-min: 576px;
 
 // Small tablets
-$screen-md-min: 768px;
+$screen-md-min: 704px;
 
 // Large tablets and small desktops
 $screen-lg-min: 992px;
@@ -21,6 +21,8 @@ $black: #000;
 $charcoal: #262626;
 $pale-yellow: #F7F4EE;
 $light-blue: #B1C5D0;
+$blank: rgba(0,0,0,0);
+$green: #89966A;
 
 // Needy Colors
 $light-yellow: #F2ECE2;
@@ -28,9 +30,10 @@ $yellow: #E3C68D;
 $dark-yellow: #E5B862;
 
 // Sanctuaries Colors
-$light-pink: #FFC4C4;
-$pink: #816A72;
-$dark-pink: #1A0009;
+$sanctuary-light-pink: #FFC4C4;
+$sanctuary-pink: #FFF3F3;
+$sanctuary-dark-pink: #816A72;
+$sanctuary-shadow-pink: #1A0009;
 
 // Risky Colors
 $light-pink: #FFC4C4;

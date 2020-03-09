@@ -330,7 +330,7 @@ ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content ."; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     .section-content {
       padding: 160px 0px;
       grid-template-columns: 40px auto 40px; } }
@@ -358,7 +358,7 @@ h1 {
   font-family: 'HelveticaOT',sans-serif;
   font-size: 3rem;
   line-height: 4rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     h1 {
       font-size: 4.5rem;
       line-height: 6.5rem; } }
@@ -373,7 +373,7 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin-bottom: 20px; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     h2 {
       font-size: 1.5rem;
       line-height: 2rem; } }
@@ -387,7 +387,7 @@ h6 {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     h6 {
       font-size: 1.5rem;
       line-height: 2rem; } }
@@ -415,6 +415,29 @@ p {
 /* =============
     Buttons
 ============= */
+.btn {
+  background-color: #FCFCFC;
+  border: none;
+  border-radius: 4px;
+  color: #262626;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.5rem;
+  height: 48px;
+  text-decoration: none;
+  transition: 0.25s; }
+
+.btn:link,
+.btn:visited {
+  background-color: #FCFCFC;
+  color: #262626; }
+
+.btn:hover {
+  background-color: #B1C5D0; }
+
+.btn:active {
+  background-color: #92AAB7;
+  transition: 0.1s; }
+
 /* =============
     Forms
 ============= */
@@ -433,7 +456,7 @@ p {
 [type='url'],
 [type='color'],
 textarea {
-  background-color: #FCFCFC;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   box-shadow: none;
   color: #FCFCFC; }
@@ -453,7 +476,7 @@ textarea {
 [type='url']:focus,
 [type='color']:focus,
 textarea:focus {
-  background-color: #FCFCFC;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   box-shadow: none;
   color: #FCFCFC; }
@@ -477,7 +500,7 @@ textarea {
   background-color: #262626;
   overflow: hidden; }
   #nav-bg svg {
-    background-color: red; }
+    background-color: rgba(0, 0, 0, 0); }
     #nav-bg svg circle {
       fill: #262626; }
 
@@ -502,7 +525,7 @@ nav {
   top: 15%;
   width: 80vw;
   z-index: 300; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     nav {
       width: 40vw; } }
   @media (min-width: 992px) {
@@ -512,7 +535,7 @@ nav {
     display: none; }
     nav ul li h6 {
       font-family: "sofia-pro", sans-serif;
-      background-color: red;
+      background-color: rgba(0, 0, 0, 0);
       border: none;
       cursor: pointer;
       font-size: 1.75rem;
@@ -523,7 +546,7 @@ nav {
       margin-bottom: 16px;
       text-decoration: none;
       color: #FCFCFC; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         nav ul li h6 {
           font-size: 2rem;
           margin-bottom: 24px; } }
@@ -578,7 +601,7 @@ footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer-title ." ". footer-form ."; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       footer article {
         grid-template-columns: auto 672px auto; } }
     @media (min-width: 992px) {
@@ -600,13 +623,13 @@ footer {
       grid-gap: 8px;
       grid-template-columns: auto auto;
       grid-template-areas: "fullname fullname" "address address" "donation donation" "ccnum ccnum" "code code" "button ."; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         footer article form {
           grid-template-columns: auto 35% 20%;
           grid-template-areas: "fullname address address" "donation ccnum code" "button . .";
           grid-gap: 24px 16px;
           margin-top: 40px; } }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         footer article form {
           margin-top: 24px;
           grid-gap: 24px 32px; } }
@@ -623,7 +646,7 @@ footer {
           grid-area: icon;
           text-align: center;
           font-size: 1.5rem; }
-          @media (min-width: 768px) {
+          @media (min-width: 704px) {
             footer article form div i {
               font-size: 1rem; } }
         footer article form div input {
@@ -633,7 +656,7 @@ footer {
           grid-area: field;
           font-size: 1.5rem;
           text-align: left; }
-          @media (min-width: 768px) {
+          @media (min-width: 704px) {
             footer article form div input {
               font-size: 1rem; } }
         footer article form div input::placeholder {
@@ -665,7 +688,7 @@ footer {
     stroke-miterlimit: 10;
     stroke-width: 8px;
     stroke: #E5B862; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       footer svg {
         width: 768px;
         bottom: -104px;
@@ -681,9 +704,30 @@ footer {
 /* =============
     Needs Hero
 ============= */
+main {
+  position: relative; }
+  main > h1 {
+    font-size: 9.375rem;
+    position: absolute;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 100;
+    left: 0;
+    opacity: 0.1;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap; }
+    @media (min-width: 704px) {
+      main > h1 {
+        font-size: 15.625rem; } }
+    @media (min-width: 992px) {
+      main > h1 {
+        font-size: 25rem; } }
+
 #n-hero div {
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   display: grid;
   grid-template-rows: 60vh auto;
   grid-template-columns: 10% 80% 10%;
@@ -709,14 +753,14 @@ footer {
   #n-herd div {
     display: grid;
     grid-template-rows: auto 50vw; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-herd div {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr; } }
     #n-herd div article {
       margin: 0px 16px;
       margin-bottom: 40px; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         #n-herd div article {
           margin: 0px 56px; } }
       @media (min-width: 992px) {
@@ -736,13 +780,13 @@ footer {
       background-position: center;
       width: auto;
       height: 50vw; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         #n-herd div aside {
           margin: 0px 56px; } }
       @media (min-width: 992px) {
         #n-herd div aside {
           margin: 0px 160px; } }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         #n-herd div aside {
           margin: auto 0;
           height: 30vw; } }
@@ -755,7 +799,7 @@ footer {
         z-index: -1;
         right: 0;
         top: 0; }
-        @media (min-width: 768px) {
+        @media (min-width: 704px) {
           #n-herd div aside::after {
             content: ''; } }
 
@@ -766,7 +810,7 @@ footer {
   margin-top: 80px;
   position: relative;
   background-color: #E3C68D; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-space div {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
@@ -775,13 +819,13 @@ footer {
       grid-template-columns: 2fr 3fr; } }
   #n-space div article {
     padding: 40px 16px; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-space div article {
         padding: 64px; } }
     @media (min-width: 992px) {
       #n-space div article {
         padding: 160px 160px 160px 80px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-space div aside {
       background-repeat: no-repeat;
       background-image: url("../img/needs/pig2.jpg");
@@ -795,7 +839,7 @@ footer {
 ============= */
 #n-attention {
   margin-top: 80px; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-attention {
       display: grid;
       grid-template-areas: ". content .";
@@ -803,7 +847,7 @@ footer {
   @media (min-width: 992px) {
     #n-attention {
       grid-template-columns: auto 800px auto; } }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-attention div {
       grid-area: content;
       height: 600px;
@@ -820,7 +864,7 @@ footer {
     background-size: cover;
     height: 60vw;
     width: 100vw; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-attention div aside {
         height: 275px;
         position: absolute;
@@ -835,7 +879,7 @@ footer {
   #n-attention div article {
     padding: 40px;
     position: relative; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-attention div article {
         bottom: 0;
         left: 0;
@@ -852,7 +896,7 @@ footer {
       top: 0;
       width: 100%;
       z-index: -1; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         #n-attention div article::after {
           height: 100%;
           opacity: 0.7; } }
@@ -863,7 +907,7 @@ footer {
 #n-trash {
   margin-top: 80px;
   margin-bottom: 80px; }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-trash {
       display: grid;
       grid-template-areas: ". content .";
@@ -871,7 +915,7 @@ footer {
   @media (min-width: 992px) {
     #n-trash {
       grid-template-columns: auto 800px auto; } }
-  @media (min-width: 768px) {
+  @media (min-width: 704px) {
     #n-trash div {
       grid-area: content;
       height: 600px;
@@ -888,7 +932,7 @@ footer {
     background-size: cover;
     height: 60vw;
     width: 100vw; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-trash div aside {
         height: 275px;
         left: 0;
@@ -903,7 +947,7 @@ footer {
   #n-trash div article {
     padding: 40px;
     position: relative; }
-    @media (min-width: 768px) {
+    @media (min-width: 704px) {
       #n-trash div article {
         bottom: 0;
         position: absolute;
@@ -920,7 +964,7 @@ footer {
       top: 0;
       width: 100%;
       z-index: -1; }
-      @media (min-width: 768px) {
+      @media (min-width: 704px) {
         #n-trash div article::after {
           height: 100%;
           opacity: 0.7; } }
