@@ -18,8 +18,13 @@
   }
   @include lg{
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "left left left left right";
-    margin-bottom: 200px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "left left left left ."
+    "left2 left2 left2 . ."
+    "left3 left3 . . .";
+    // margin-bottom: 200px;
+    padding-bottom: 0;
     div{
       grid-area: left;
     }
@@ -32,10 +37,23 @@
       position: relative;
       top: 530px;
     }
+    @include lg{
+      grid-area: left3;
+      top: 15px;
+
+    }
   }
 
   #health-extra-text-2{
     display: none;
+    @include lg{
+      display: block;
+      grid-area: left2;
+      // padding-bottom: 75px;
+      padding-top: 25px;
+      // padding-bottom: 25px;
+      // padding-right: 70px;
+    }
   }
 }
 
@@ -49,20 +67,27 @@
 
   #health-tablet-bg {
     display: none;
-  }
-  @include md{
-    #health-tablet-bg {
-      display: block;
-      position: absolute;
-      background-color: $opacity-orange;
-      height: 80vh;
-      width: 40vw;
-      top: 850px;
-      right: -200px;
-      background-image: none;
-      z-index: 1;
+    @include md{
+        display: block;
+        position: absolute;
+        background-color: $opacity-orange;
+        height: 80vh;
+        width: 40vw;
+        top: 850px;
+        right: -200px;
+        background-image: none;
+        z-index: 1;
+      }
+    @include lg{
+      height: 70vh;
+      width: 30vw;
+      top: 1120px;
+      right: 0px;
+      // left: 0px;
     }
   }
+
+
 
   div {
     position: relative;

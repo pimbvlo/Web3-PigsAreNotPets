@@ -970,8 +970,9 @@ footer svg g {
 @media (min-width: 992px) {
   #health {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "left left left left right";
-    margin-bottom: 200px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "left left left left ." "left2 left2 left2 . ." "left3 left3 . . .";
+    padding-bottom: 0;
   }
   #health div {
     grid-area: left;
@@ -992,8 +993,21 @@ footer svg g {
     top: 530px;
   }
 }
+@media (min-width: 992px) {
+  #health #health-extra-text {
+    grid-area: left3;
+    top: 15px;
+  }
+}
 #health #health-extra-text-2 {
   display: none;
+}
+@media (min-width: 992px) {
+  #health #health-extra-text-2 {
+    display: block;
+    grid-area: left2;
+    padding-top: 25px;
+  }
 }
 
 #health-image {
@@ -1018,6 +1032,14 @@ footer svg g {
     right: -200px;
     background-image: none;
     z-index: 1;
+  }
+}
+@media (min-width: 992px) {
+  #health-image #health-tablet-bg {
+    height: 70vh;
+    width: 30vw;
+    top: 1120px;
+    right: 0px;
   }
 }
 #health-image div {
@@ -1139,6 +1161,16 @@ footer svg g {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
+  }
+  #health #health-extra-text {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #health #health-extra-text-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
   }
   #wallet div {
     -ms-grid-row: 1;
