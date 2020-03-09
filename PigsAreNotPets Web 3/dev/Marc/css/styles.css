@@ -1045,6 +1045,14 @@ footer svg g {
   height: 60vh;
   bottom: -110px;
 }
+@media (min-width: 704px) {
+  #wallet-image div {
+    background-size: 40%;
+    bottom: -600px;
+    left: 200px;
+    z-index: 1;
+  }
+}
 
 #wallet {
   background-color: #FCE2D3;
@@ -1072,12 +1080,12 @@ footer svg g {
     grid-area: left;
     padding-left: 56px;
     margin-left: 25px;
-    padding-right: 40px;
-    z-index: 5;
+    margin-right: 30px;
   }
   #wallet div article {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-right: 50px;
   }
   #wallet > div {
     -ms-grid-row: 1;

@@ -3,6 +3,9 @@
 ============= */
 
 #wallet-image {
+  @include md{
+    // z-index: 1;
+  }
   // margin-bottom: -60px;
   div {
     position: relative;
@@ -12,7 +15,13 @@
     background-repeat: no-repeat;
     height: 60vh;
     bottom: -110px;
-    // top: -90px;
+    @include md{
+      background-size: 40%;
+      bottom: -600px;
+      left: 200px;
+      z-index: 1;
+
+    }
   }
 }
 
@@ -35,22 +44,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "left left right";
+  
+    // z-index: 2;
     // margin-bottom: -100px;
 
     div {
       background-color: $opacity-orange;
-      // opacity: 55%;
       grid-area: left;
       padding-left: 56px;
       margin-left: 25px;
-      // margin-right: 40px;
-      padding-right: 40px;
-      z-index: 5;
+      // padding-right: 50px;
+      margin-right: 30px;
+
+
+
 
       article{
         padding-top: 40px;
         padding-bottom: 40px;
-        // padding-right: 40px;
+        // padding-left: 50px;
+        padding-right: 50px;
+
       }
     }
   }
