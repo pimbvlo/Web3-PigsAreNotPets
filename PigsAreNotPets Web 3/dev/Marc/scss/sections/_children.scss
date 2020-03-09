@@ -2,8 +2,8 @@
     pig health matters
 ============= */
 #children {
-  background-color: $light-orange;
-  margin-bottom: -100px;
+  background-color: $opacity-orange;
+  // margin-bottom: -100px;
   @include md {
     padding-top: 70px;
     padding-bottom: 70px;

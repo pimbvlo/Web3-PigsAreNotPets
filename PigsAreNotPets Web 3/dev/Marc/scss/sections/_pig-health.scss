@@ -2,7 +2,7 @@
     pig health matters
 ============= */
 #health {
-  background-color: $light-orange;
+  background-color: $opacity-orange;
   @include md {
     background-color: $white;
     display: grid;
