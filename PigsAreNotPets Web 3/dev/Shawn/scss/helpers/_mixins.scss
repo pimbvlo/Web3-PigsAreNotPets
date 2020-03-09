@@ -1,4 +1,8 @@
-
+@charset "UTF-8";
+@font-face {
+    font-family: 'HelveticaOT';
+    src: url("../fonts/HelveticaOT.woff2") format("woff2"), url("../fonts/HelveticaOT.woff") format("woff");
+}
 /* =============
     Mixins
 ============= */
@@ -142,3 +146,13 @@ html {
 // @include xl{
 //     grid-template-columns: repeat(4, 1fr);
 // }
+
+@mixin standard-margin{
+    margin: 0px 16px;
+    @include md{
+        margin: 0px 56px;
+    }
+    @include lg{
+        margin: 0px 160px;
+    }
+}

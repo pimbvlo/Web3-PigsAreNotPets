@@ -1,0 +1,96 @@
+/* =============
+    Mini-Pigs
+============= */
+#s-section-5 {
+    background-color: $sanctuary-shadow-pink;
+    margin-bottom: 64px;
+    @include md {
+        margin-bottom: 96px;
+    }
+    @include lg {
+        margin-bottom: 200px;
+    }
+
+    > div {
+        display: grid;
+        grid-template-areas: "aside" "article";
+        grid-template-columns: repeat(1,1fr);
+        @include md {
+            grid-template-areas: "aside article";
+            grid-template-columns: auto 50%;
+        }
+        @include lg {
+            grid-template-columns: auto 40%;
+        }
+        @include xl {
+            grid-template-columns: 50% auto;
+        }
+
+        aside {
+            grid-area: aside;
+
+            figure {
+                background-image: url("../img/Sanctuaries/MiniPigs/MiniPig.jpg");
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 90vh;
+                opacity: 0.85;
+                width: 100%;
+                @include md {
+                    background-position: 80% center;
+                    height: 100%;
+                }
+            }
+        }
+
+        article {
+            display: grid;
+            grid-area: article;
+            grid-template-areas: ". content .";
+            grid-template-columns: 16px auto 16px;
+            padding: 64px 0;
+            @include md {
+                grid-template-columns: 40px auto 40px;
+                padding: 80px 0;
+            }
+            @include lg {
+                grid-template-columns: 80px auto 80px;
+                padding: 120px 0;
+            }
+            @include lg {
+                grid-template-columns: 80px auto 280px;
+                padding: 120px 0;
+            }
+
+            > div {
+                grid-area: content;
+            }
+
+            div {
+                color: $white;
+
+                h2 {
+                    padding-bottom: 24px;
+                    @include md {
+                        padding-bottom: 16px;
+                    }
+                }
+
+                > p {}
+
+                p:nth-child(3) {
+                    padding-top: 32px;
+
+                    a:link, a:visited{
+                        color: $sanctuary-pink;
+
+                    }
+                    a:hover, a:active{
+                        border-bottom: 4px solid $sanctuary-pink;
+                    }
+                }
+            }
+        }
+    }
+}

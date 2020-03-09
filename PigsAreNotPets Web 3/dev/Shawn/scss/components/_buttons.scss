@@ -1,3 +1,29 @@
 /* =============
     Buttons
 ============= */
+.btn {
+    background-color: $white;
+    border: none;
+    border-radius: 4px;
+    color: $charcoal;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: rem-calc(24);
+    height: 48px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn:link,
+.btn:visited {
+    background-color: $white;
+    color: $charcoal;
+}
+
+.btn:hover {
+    background-color: $light-blue;
+}
+
+.btn:active {
+    background-color: #92AAB7;
+    transition: 0.1s;
+}

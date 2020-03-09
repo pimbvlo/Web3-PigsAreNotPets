@@ -35,6 +35,114 @@
 		"oAP": "/deploy/fonts/HelveticaOT.woff2",
 		"oF": 0
 		},
+	"/deploy/img/Global/Footer/Outline.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Global/Footer/Outline.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Global/Header/Logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Global/Header/Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Sanctuaries/Hero/Hero.jpg": {
+		"ft": 16384,
+		"iS": 116682,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Hero/Hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Hero/Hero@2x.jpg": {
+		"ft": 16384,
+		"iS": 292303,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Hero/Hero@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/MiniPigs/MiniPig.jpg": {
+		"ft": 16384,
+		"iS": 106299,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/MiniPigs/MiniPig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/MiniPigs/MiniPig@2x.jpg": {
+		"ft": 16384,
+		"iS": 291623,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/MiniPigs/MiniPig@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/PotBellied/PotBelly.jpg": {
+		"ft": 16384,
+		"iS": 176513,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/PotBellied/PotBelly.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/PotBellied/PotBelly@2x.jpg": {
+		"ft": 16384,
+		"iS": 441979,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/PotBellied/PotBelly@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries.jpg": {
+		"ft": 16384,
+		"iS": 63639,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries@2x.jpg": {
+		"ft": 16384,
+		"iS": 137100,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Sanctuaries/Sanctuaries/Sanctuaries@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -590,6 +698,96 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shawn/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/footer.html",
+		"oF": 0
+		},
+	"/dev/Shawn/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/header.html",
+		"oF": 0
+		},
+	"/dev/Shawn/hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/hero.html",
+		"oF": 0
+		},
+	"/dev/Shawn/js/burger/burger-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/burger/burger-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/js/burger/burger-mouseenter.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/burger/burger-mouseenter-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/js/burger/burger-mouseleave.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/burger/burger-mouseleave-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/js/burger/burger.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/burger/burger-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/js/navigation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/js/rellax.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/rellax-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/Shawn/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
@@ -601,6 +799,49 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/Shawn/js/waypoints.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Shawn/js/waypoints-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Shawn/mini-pigs.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/mini-pigs.html",
+		"oF": 0
+		},
+	"/dev/Shawn/nav-background.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/nav-background.html",
+		"oF": 0
+		},
+	"/dev/Shawn/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/navigation.html",
+		"oF": 0
+		},
+	"/dev/Shawn/pot-bellied.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/pot-bellied.html",
+		"oF": 0
+		},
 	"/dev/Shawn/sanctuaries.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -608,6 +849,14 @@
 		"oA": 0,
 		"oAP": "/deploy/sanctuaries.html",
 		"oF": 2
+		},
+	"/dev/Shawn/sanctuary.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/sanctuary.html",
+		"oF": 0
 		},
 	"/dev/Shawn/scss/base/_base.scss": {
 		"aP": 0,
@@ -674,6 +923,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shawn/scss/components/_nav-background.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/components/_nav-background.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Shawn/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -683,6 +945,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Shawn/scss/components/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/components/_scrim.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/components/_scrim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -752,6 +1027,58 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shawn/scss/sections/_mini-pigs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_mini-pigs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/sections/_pot-bellied.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_pot-bellied.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/sections/_sanctuary.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_sanctuary.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Shawn/scss/sections/_stats.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/scss/sections/_stats.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Shawn/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -764,6 +1091,36 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/dev/Shawn/stats.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/Shawn/stats.html",
+		"oF": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -1213,7 +1570,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8193,
+	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1536,7 +1893,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2256,7 +2613,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, ",
+	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

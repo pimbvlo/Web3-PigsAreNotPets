@@ -1,5 +1,48 @@
-div{
-    height:100vw;
-    width:100vw;
-    background-color: #FF00FF;
+
+/* =============
+    Hero
+============= */
+#s-section-1 {
+    align-items: flex-end;
+    background-image: url("../img/Sanctuaries/Hero/Hero.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 95vh;
+    @include md {
+        background-position: center;
+    }
+    @include lg {
+        background-size: 104% auto;
+    }
+
+    > div {
+        align-items: flex-end;
+        display: flex;
+        height: 280px;
+        padding: 0 24px 40px;
+        width: 100%;
+        @include md {
+            height: 328px;
+            padding: 0;
+        }
+
+        article {
+            padding-top: 4px;
+            // display: flex;
+            // align-items: flex-end;
+            @include md {
+                margin: 0 auto 56px 104px;
+                padding: 0;
+            }
+            @include lg {
+                margin: 64px 96px;
+            }
+
+            h1 {
+                color: $white;
+            }
+        }
+    }
 }

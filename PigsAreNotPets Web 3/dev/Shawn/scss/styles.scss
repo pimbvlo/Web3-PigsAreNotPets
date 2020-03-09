@@ -13,6 +13,8 @@
 @import "components/_buttons";
 @import "components/_forms";
 @import "components/_navigation";
+@import "components/_nav-background";
+@import "components/_scrim";
 
 // Layout Styles
 @import "layout/_header";
@@ -20,3 +22,7 @@
 
 // Sections Styles
 @import "sections/_hero";
+@import "sections/_stats";
+@import "sections/_pot-bellied";
+@import "sections/_sanctuary";
+@import "sections/_mini-pigs";

@@ -1,0 +1,106 @@
+/* =============
+    Sanctuary
+============= */
+#s-section-4 {
+    @include md {
+        margin: 64px 40px 280px;
+    }
+    @include lg {
+        margin: 64px 160px 400px;
+    }
+    @include xl {
+        margin: 64px 304px 504px;
+    }
+
+    > div {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "article" "figure";
+        @include md {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: "article figure";
+        }
+
+        article {
+            grid-area: article;
+            background-color: rgba(242,236,226,0.7);
+            z-index: 100;
+            // margin-bottom: 56px;
+            @include md {
+                // margin: 64px 96px;
+                width: 60vw;
+                padding: 0;
+            }
+            @include lg {
+                width: 56vw;
+            }
+            @include xl {
+                width: 40vw;
+            }
+
+            > div {
+                @include md {
+                    padding: 40px 0;
+                }
+
+                h2 {
+                    margin-bottom: 24px;
+                    @include md {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                p {}
+
+                p:nth-child(3) {
+                    padding-top: 32px;
+
+                    a:link, a:visited{
+                        color: $sanctuary-shadow-pink;
+
+                    }
+                    a:hover, a:active{
+                        border-bottom: 4px solid $sanctuary-shadow-pink;
+                    }
+                }
+            }
+        }
+
+        aside {
+            position: relative;
+            grid-area: figure;
+            @include md {
+                display: initial;
+            }
+
+            figure {
+                background-image: url("../img/Sanctuaries/Sanctuaries/Sanctuaries.jpg");
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: auto 120%;
+                display: none;
+                @include md {
+                    background-size: cover;
+                    background-position: center;
+                    display: initial;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 224px;
+                    z-index: 50;
+                    width: 55vw;
+                    height: 400px;
+                }
+                @include lg {
+                    margin-left: 80px;
+                    margin-top: 352px;
+                    width: 60vw;
+                    height: 400px;
+                }
+                @include xl {
+                    width: 30vw;
+                    height: 504px;
+                }
+            }
+        }
+    }
+}
