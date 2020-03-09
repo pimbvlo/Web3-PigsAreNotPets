@@ -967,6 +967,16 @@ footer svg g {
     z-index: 5;
   }
 }
+#health #health-extra-text {
+  display: none;
+}
+@media (min-width: 704px) {
+  #health #health-extra-text {
+    display: block;
+    position: relative;
+    top: 530px;
+  }
+}
 
 #health-image {
   margin-bottom: -60px;

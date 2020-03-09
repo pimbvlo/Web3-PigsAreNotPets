@@ -16,8 +16,19 @@
       z-index: 5;
     }
   }
+
+  #health-extra-text{
+    display: none;
+    @include md{
+      display: block;
+      position: relative;
+      top: 530px;
+    }
+  }
 }
 
+
+// health image
 #health-image {
   margin-bottom: -60px;
   @include md{
