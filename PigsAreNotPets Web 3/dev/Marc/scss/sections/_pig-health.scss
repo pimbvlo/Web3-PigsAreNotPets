@@ -20,6 +20,9 @@
 
 #health-image {
   margin-bottom: -60px;
+  @include md{
+    margin-bottom: -435px;
+  }
 
   #health-tablet-bg {
     display: none;

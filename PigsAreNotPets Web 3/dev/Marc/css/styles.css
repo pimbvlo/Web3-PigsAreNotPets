@@ -977,6 +977,11 @@ footer svg g {
 #health-image {
   margin-bottom: -60px;
 }
+@media (min-width: 704px) {
+  #health-image {
+    margin-bottom: -435px;
+  }
+}
 #health-image #health-tablet-bg {
   display: none;
 }
