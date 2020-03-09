@@ -303,6 +303,22 @@
 		"oAP": "/dev/Matt/attention.html",
 		"oF": 0
 		},
+	"/dev/Matt/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/Matt/footer.html",
+		"oF": 0
+		},
+	"/dev/Matt/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/Matt/header.html",
+		"oF": 0
+		},
 	"/dev/Matt/herd.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -319,16 +335,21 @@
 		"oAP": "/dev/Matt/hero.html",
 		"oF": 0
 		},
-	"/dev/Matt/js/scripts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"/dev/Matt/nav-background.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
+		"oAP": "/dev/Matt/nav-background.html",
+		"oF": 0
+		},
+	"/dev/Matt/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/Matt/navigation.html",
+		"oF": 0
 		},
 	"/dev/Matt/needs.kit": {
 		"cB": 0,
