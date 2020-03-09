@@ -4,7 +4,7 @@
 #health {
   background-color: $opacity-orange;
   @include md {
-    background-color: $white;
+    background-color: $blank;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "left right";
