@@ -1024,6 +1024,20 @@ footer svg g {
   background-color: #FCE2D3;
   margin-bottom: -100px;
 }
+@media (min-width: 704px) {
+  #children {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+  }
+  #children div {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #children div h2 {
+    text-align: center;
+  }
+}
 
 /* =============
     pig health matters

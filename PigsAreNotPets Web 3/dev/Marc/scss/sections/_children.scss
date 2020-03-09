@@ -1,16 +1,21 @@
 /* =============
     pig health matters
 ============= */
-
 #children {
   background-color: $light-orange;
   margin-bottom: -100px;
+  @include md {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
 
-    // div {
-    //   position: relative;
-    //   background-image: url("../img/sick-pig.png");
-    //   background-size: cover;
-    //   height: 60vh;
-    //   top: 150px;
-    // }
+    div {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
 }
