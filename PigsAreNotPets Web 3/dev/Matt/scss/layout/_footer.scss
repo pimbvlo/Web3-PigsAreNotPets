@@ -12,7 +12,7 @@ footer {
         // top: 0px;
         // right: 0px;
         height: 16px;
-        background-color: $sanctuary-dark-pink;
+        background-color: $dark-yellow;
     }
 
     article {
@@ -139,7 +139,7 @@ footer {
         fill: none;
         stroke-miterlimit: 10;
         stroke-width: 8px;
-        stroke: $sanctuary-dark-pink;
+        stroke: $dark-yellow;
         @include md {
             width: 768px;
             bottom: -104px;

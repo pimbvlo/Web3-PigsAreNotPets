@@ -418,33 +418,272 @@ p {
 /* =============
     Forms
 ============= */
-[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
-  box-shadow: none; }
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  background-color: #FCFCFC;
+  border: none;
+  box-shadow: none;
+  color: #FCFCFC; }
 
-[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
-  box-shadow: none; }
+[type='text']:focus,
+[type='password']:focus,
+[type='date']:focus,
+[type='datetime']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='color']:focus,
+textarea:focus {
+  background-color: #FCFCFC;
+  border: none;
+  box-shadow: none;
+  color: #FCFCFC; }
 
-input[type=text],
 input[type=email],
 input[type=password],
+input[type=text],
 textarea {
   -webkit-appearance: none; }
 
 /* =============
+    Nav Background
+============= */
+#nav-bg {
+  position: fixed;
+  height: 50px;
+  width: 80vw;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  background-color: #262626;
+  overflow: hidden; }
+  #nav-bg svg {
+    background-color: red; }
+    #nav-bg svg circle {
+      fill: #262626; }
+
+/*
+* Future CSS (use it today with postCSS-easing-gradients - note your settings colorMode: 'lrgb' and colorStops: 15)
+*/
+.currentscrim {
+  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), cubic-bezier(0.45, 0.05, 0.55, 0.95), #555555); }
+
+/*
+* Fallback CSS
+*/
+.fallbackscrim {
+  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0) 0%, rgba(85, 85, 85, 0.023105) 9.13%, rgba(85, 85, 85, 0.0685131) 17.35%, rgba(85, 85, 85, 0.132507) 24.8%, rgba(85, 85, 85, 0.21137) 31.63%, rgba(85, 85, 85, 0.301385) 38.01%, rgba(85, 85, 85, 0.398834) 44.08%, rgba(85, 85, 85, 0.5) 50%, rgba(85, 85, 85, 0.601166) 55.92%, rgba(85, 85, 85, 0.698615) 61.99%, rgba(85, 85, 85, 0.78863) 68.37%, rgba(85, 85, 85, 0.867493) 75.2%, rgba(85, 85, 85, 0.931487) 82.65%, rgba(85, 85, 85, 0.976895) 90.87%, #555555 100%); }
+
+/* =============
     Navigation
 ============= */
+nav {
+  position: fixed;
+  right: 24px;
+  top: 15%;
+  width: 80vw;
+  z-index: 300; }
+  @media (min-width: 768px) {
+    nav {
+      width: 40vw; } }
+  @media (min-width: 992px) {
+    nav {
+      width: 30vw; } }
+  nav ul li {
+    display: none; }
+    nav ul li h6 {
+      font-family: "sofia-pro", sans-serif;
+      background-color: red;
+      border: none;
+      cursor: pointer;
+      font-size: 1.75rem;
+      padding: 10px 0;
+      text-align: right;
+      transition: 0.25s;
+      width: 100%;
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: #FCFCFC; }
+      @media (min-width: 768px) {
+        nav ul li h6 {
+          font-size: 2rem;
+          margin-bottom: 24px; } }
+      @media (min-width: 992px) {
+        nav ul li h6 {
+          font-size: 2.5rem;
+          margin-bottom: 32px; } }
+      nav ul li h6 a {
+        text-decoration: none;
+        color: #FCFCFC; }
+    nav ul li button:hover {
+      color: #262626; }
+  nav ul li:nth-last-child(1) {
+    margin-bottom: 0; }
+
 /* =============
     Header
 ============= */
+header {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  background-color: #FCFCFC;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+  padding: 10px 0;
+  z-index: 500; }
+  header > div {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header > div #burger-container svg {
+      height: 56px;
+      cursor: pointer; }
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #262626;
+  position: relative;
+  overflow: hidden; }
+  footer .colorBar {
+    height: 16px;
+    background-color: #E5B862; }
+  footer article {
+    margin: 40px 0;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer-title ." ". footer-form ."; }
+    @media (min-width: 768px) {
+      footer article {
+        grid-template-columns: auto 672px auto; } }
+    @media (min-width: 992px) {
+      footer article {
+        grid-template-columns: 112px 672px auto;
+        padding: 64px 0; } }
+    footer article h2 {
+      color: #FCFCFC;
+      grid-area: footer-title;
+      font-size: 2rem; }
+      @media (min-width: 992px) {
+        footer article h2 {
+          font-size: 3rem; } }
+    footer article form {
+      z-index: 100;
+      margin-top: 24px;
+      grid-area: footer-form;
+      display: grid;
+      grid-gap: 8px;
+      grid-template-columns: auto auto;
+      grid-template-areas: "fullname fullname" "address address" "donation donation" "ccnum ccnum" "code code" "button ."; }
+      @media (min-width: 768px) {
+        footer article form {
+          grid-template-columns: auto 35% 20%;
+          grid-template-areas: "fullname address address" "donation ccnum code" "button . .";
+          grid-gap: 24px 16px;
+          margin-top: 40px; } }
+      @media (min-width: 768px) {
+        footer article form {
+          margin-top: 24px;
+          grid-gap: 24px 32px; } }
+      footer article form div {
+        display: grid;
+        grid-template-columns: 32px auto;
+        grid-template-areas: "icon field";
+        padding-bottom: 8px;
+        border-bottom: #FCFCFC 4px solid;
+        margin-bottom: 16px; }
+        footer article form div i {
+          color: #FCFCFC;
+          padding: 8px;
+          grid-area: icon;
+          text-align: center;
+          font-size: 1.5rem; }
+          @media (min-width: 768px) {
+            footer article form div i {
+              font-size: 1rem; } }
+        footer article form div input {
+          color: #FCFCFC;
+          margin-left: 8px;
+          font-family: "brandon-grotesque", sans-serif;
+          grid-area: field;
+          font-size: 1.5rem;
+          text-align: left; }
+          @media (min-width: 768px) {
+            footer article form div input {
+              font-size: 1rem; } }
+        footer article form div input::placeholder {
+          color: #FCFCFC;
+          opacity: 0.9; }
+      footer article form div:nth-child(1) {
+        grid-area: fullname; }
+      footer article form div:nth-child(2) {
+        grid-area: address; }
+      footer article form div:nth-child(3) {
+        grid-area: donation; }
+      footer article form div:nth-child(4) {
+        grid-area: ccnum; }
+      footer article form div:nth-child(5) {
+        grid-area: code; }
+      footer article form button {
+        grid-area: button;
+        font-weight: 700;
+        padding: 8px 40px;
+        margin-top: 16px;
+        width: 100%; }
+  footer svg {
+    position: absolute;
+    z-index: 0;
+    bottom: -10px;
+    right: -350px;
+    width: 704px;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 8px;
+    stroke: #E5B862; }
+    @media (min-width: 768px) {
+      footer svg {
+        width: 768px;
+        bottom: -104px;
+        right: -256px; } }
+    @media (min-width: 992px) {
+      footer svg {
+        width: 1200px;
+        top: 60px;
+        right: -400px; } }
+    footer svg g {
+      opacity: 0.2; }
+
 /* =============
     Needs Hero
 ============= */
 #n-hero div {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-rows: 60vh auto;
   grid-template-columns: 10% 80% 10%;
@@ -622,7 +861,8 @@ textarea {
     Needs trash
 ============= */
 #n-trash {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
   @media (min-width: 768px) {
     #n-trash {
       display: grid;
