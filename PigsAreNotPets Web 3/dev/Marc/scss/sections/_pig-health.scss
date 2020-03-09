@@ -8,19 +8,36 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "left right";
+    // margin-bottom: -100px;
 
     div {
       grid-area: left;
       padding-left: 56px;
+      z-index: 5;
     }
   }
 }
 
 #health-image {
   margin-bottom: -60px;
-  // @include md{
-  //   position: relative;
-  // }
+
+  #health-tablet-bg {
+    display: none;
+  }
+  @include md{
+    #health-tablet-bg {
+      display: block;
+      position: absolute;
+      background-color: $light-orange;
+      height: 80vh;
+      width: 40vw;
+      top: 850px;
+      right: -200px;
+      background-image: none;
+      z-index: 1;
+    }
+  }
+
   div {
     position: relative;
     background-image: url("../img/sick-pig.png");
@@ -35,34 +52,9 @@
       background-size: 45%;
       height: 80vh;
       left: 250px;
+      z-index: 5;
 
 
     }
   }
-
-  @include md{
-    #health-tablet-bg {
-      position: relative;
-      background-color: $light-orange;
-      height: 80vh;
-      width: 40vw;
-      // top: -100px;
-      // bottom: 500px;
-      background-image: none;
-
-    }
-  }
-
 }
-
-// #health-tablet-bg {
-//   display: none;
-//   div {
-//     position: relative;
-//     @include md {
-//       background-color: $light-orange;
-//       display: block;
-//       height: 80vh;
-//     }
-//   }
-// }

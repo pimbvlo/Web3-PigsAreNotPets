@@ -964,6 +964,7 @@ footer svg g {
   #health div {
     grid-area: left;
     padding-left: 56px;
+    z-index: 5;
   }
 }
 @media (min-width: 704px) {
@@ -975,6 +976,22 @@ footer svg g {
 
 #health-image {
   margin-bottom: -60px;
+}
+#health-image #health-tablet-bg {
+  display: none;
+}
+@media (min-width: 704px) {
+  #health-image #health-tablet-bg {
+    display: block;
+    position: absolute;
+    background-color: #FCE2D3;
+    height: 80vh;
+    width: 40vw;
+    top: 850px;
+    right: -200px;
+    background-image: none;
+    z-index: 1;
+  }
 }
 #health-image div {
   position: relative;
@@ -991,15 +1008,7 @@ footer svg g {
     background-size: 45%;
     height: 80vh;
     left: 250px;
-  }
-}
-@media (min-width: 704px) {
-  #health-image #health-tablet-bg {
-    position: relative;
-    background-color: #FCE2D3;
-    height: 80vh;
-    width: 40vw;
-    background-image: none;
+    z-index: 5;
   }
 }
 
