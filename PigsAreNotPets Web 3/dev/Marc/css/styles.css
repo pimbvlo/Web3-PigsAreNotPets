@@ -983,7 +983,7 @@ footer svg g {
   #health-image #health-tablet-bg {
     display: block;
     position: absolute;
-    background-color: #FCE2D3;
+    background-color: rgba(252, 226, 211, 0.55);
     height: 80vh;
     width: 40vw;
     top: 850px;
@@ -1049,6 +1049,14 @@ footer svg g {
   opacity: 15%;
   top: 300px;
 }
+@media (min-width: 704px) {
+  #wallet h1 {
+    left: 430px;
+    top: 150px;
+    z-index: 5;
+    font-size: 180px;
+  }
+}
 #wallet #wallet-image {
   position: relative;
   background-image: url("../img/wallet-image.png");
@@ -1075,6 +1083,7 @@ footer svg g {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "left left right";
+    margin-top: -40px;
   }
   #wallet div {
     background-color: rgba(252, 226, 211, 0.55);
@@ -1089,6 +1098,9 @@ footer svg g {
     padding-bottom: 40px;
     padding-right: 50px;
     margin-bottom: -100px;
+  }
+  #wallet div #wallet-extra-text {
+    grid-area: right;
   }
   #wallet > div {
     -ms-grid-row: 1;
@@ -1109,6 +1121,14 @@ footer svg g {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
+  }
+  #wallet div #wallet-extra-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #wallet > #wallet-extra-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
 }
 #wallet #wallet-image-2 {

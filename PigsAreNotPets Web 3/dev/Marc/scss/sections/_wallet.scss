@@ -34,6 +34,14 @@
     font-size: 148px;
     opacity: 15%;
     top: 300px;
+    @include md{
+      left: 430px;
+      top: 150px;
+      z-index: 5;
+      font-size:180px;
+      // right: 0;
+      // bottom: -40px;
+    }
   }
 
   #wallet-image {
@@ -49,7 +57,7 @@
     // top: -100px;
     bottom: 450px;
     left: 30px;
-    @include md{
+    @include md {
       background-size: 50%;
       background-color: $blank;
       left: 265px;
@@ -63,8 +71,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "left left right";
-    // z-index: 2;
-    // margin-bottom: -100px;
+    margin-top: -40px;
     div {
       background-color: $opacity-orange;
       grid-area: left;
@@ -78,10 +85,11 @@
       article {
         padding-top: 40px;
         padding-bottom: 40px;
-        // padding-left: 50px;
         padding-right: 50px;
         margin-bottom: -100px;
-        // margin-top: -100px;
+      }
+      #wallet-extra-text{
+        grid-area: right;
       }
     }
   }
