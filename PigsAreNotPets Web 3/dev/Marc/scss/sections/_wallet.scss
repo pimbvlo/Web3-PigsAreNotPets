@@ -1,0 +1,44 @@
+/* =============
+    pig health matters
+============= */
+#wallet-image{
+  // margin-bottom: -60px;
+
+  div {
+  position: relative;
+  background-image: url("../img/wallet-image.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  bottom: -110px;
+  // top: -90px;
+}
+
+}
+
+#wallet {
+  background-color: $light-orange;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: -1;
+  // overflow: hidden;
+
+  h1{
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 150px;
+    left: 50px;
+    font-size: 148px;
+    opacity: 15%;
+    // top: 0px;
+  }
+
+    // div {
+    //   position: relative;
+    //   background-image: url("../img/sick-pig.png");
+    //   background-size: cover;
+    //   height: 60vh;
+    //   top: 150px;
+    // }
+}

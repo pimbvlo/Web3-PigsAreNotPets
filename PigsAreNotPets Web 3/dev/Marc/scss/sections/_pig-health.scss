@@ -1,3 +1,68 @@
 /* =============
     pig health matters
 ============= */
+#health {
+  background-color: $light-orange;
+  @include md {
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "left right";
+
+    div {
+      grid-area: left;
+      padding-left: 56px;
+    }
+  }
+}
+
+#health-image {
+  margin-bottom: -60px;
+  // @include md{
+  //   position: relative;
+  // }
+  div {
+    position: relative;
+    background-image: url("../img/sick-pig.png");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    top: -90px;
+    @include md {
+      // position: relative;
+      top: -645px;
+      background-size: 45%;
+      height: 80vh;
+      left: 250px;
+
+
+    }
+  }
+
+  @include md{
+    #health-tablet-bg {
+      position: relative;
+      background-color: $light-orange;
+      height: 80vh;
+      width: 40vw;
+      // top: -100px;
+      // bottom: 500px;
+      background-image: none;
+
+    }
+  }
+
+}
+
+// #health-tablet-bg {
+//   display: none;
+//   div {
+//     position: relative;
+//     @include md {
+//       background-color: $light-orange;
+//       display: block;
+//       height: 80vh;
+//     }
+//   }
+// }

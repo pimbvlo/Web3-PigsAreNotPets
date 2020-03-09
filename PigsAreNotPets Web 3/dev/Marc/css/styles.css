@@ -350,6 +350,10 @@ template {
 /* =============
     Base
 ============= */
+main {
+  overflow: hidden;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -905,7 +909,7 @@ footer svg g {
 }
 @media (min-width: 704px) {
   #hero {
-    background-position: center;
+    background-position: 30% 70%;
   }
 }
 @media (min-width: 992px) {
@@ -947,3 +951,90 @@ footer svg g {
 /* =============
     pig health matters
 ============= */
+#health {
+  background-color: #FCE2D3;
+}
+@media (min-width: 704px) {
+  #health {
+    background-color: #FCFCFC;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "left right";
+  }
+  #health div {
+    grid-area: left;
+    padding-left: 56px;
+  }
+}
+@media (min-width: 704px) {
+  #health div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+
+#health-image {
+  margin-bottom: -60px;
+}
+#health-image div {
+  position: relative;
+  background-image: url("../img/sick-pig.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  top: -90px;
+}
+@media (min-width: 704px) {
+  #health-image div {
+    top: -645px;
+    background-size: 45%;
+    height: 80vh;
+    left: 250px;
+  }
+}
+@media (min-width: 704px) {
+  #health-image #health-tablet-bg {
+    position: relative;
+    background-color: #FCE2D3;
+    height: 80vh;
+    width: 40vw;
+    background-image: none;
+  }
+}
+
+/* =============
+    pig health matters
+============= */
+#children {
+  background-color: #FCE2D3;
+  margin-bottom: -100px;
+}
+
+/* =============
+    pig health matters
+============= */
+#wallet-image div {
+  position: relative;
+  background-image: url("../img/wallet-image.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  bottom: -110px;
+}
+
+#wallet {
+  background-color: #FCE2D3;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: -1;
+}
+#wallet h1 {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 150px;
+  left: 50px;
+  font-size: 148px;
+  opacity: 15%;
+}
