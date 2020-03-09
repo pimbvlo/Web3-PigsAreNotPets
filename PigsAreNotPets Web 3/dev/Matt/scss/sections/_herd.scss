@@ -1,0 +1,63 @@
+/* =============
+    Needs Herd
+============= */
+#n-herd{
+    padding:64px 0;
+    position: relative;
+    margin-top: 80px;
+
+    div{
+        display: grid;
+        grid-template-rows: auto 50vw;
+
+        @include md{
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        article{
+            @include standard-margin;
+            margin-bottom: 40px;
+            @include lg{
+            margin: 0 30px 0 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            }
+
+            p:nth-last-child(1){
+
+                padding-top: 30px;
+            }
+        }
+        aside{
+            @include standard-margin;
+            background-repeat: no-repeat;
+            background-image: url('../img/needs/pig1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: auto;
+            height:50vw;
+            @include md{
+                margin:auto 0;
+                height:30vw;
+            }
+
+            &::after{
+                display: block;
+                position: absolute;
+                width:30%;
+                height:100%;
+                background-color: $light-yellow;
+                z-index: -1;
+                right:0;
+                top:0;
+                @include md{
+                    content: '';
+                }
+            }
+
+
+        }
+    }
+
+}

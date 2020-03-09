@@ -12,6 +12,8 @@
 // Components Styles
 @import "components/_buttons";
 @import "components/_forms";
+@import "components/_nav-background";
+@import "components/_scrim";
 @import "components/_navigation";
 
 // Layout Styles
@@ -19,3 +21,8 @@
 @import "layout/_footer";
 
 // Sections Styles
+@import "sections/_hero";
+@import "sections/_herd";
+@import "sections/_space";
+@import "sections/_attention";
+@import "sections/_trash";

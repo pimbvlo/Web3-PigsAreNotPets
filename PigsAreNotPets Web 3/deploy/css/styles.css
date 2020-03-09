@@ -348,18 +348,21 @@ ul {
     list-style: none; }
 
 .section-content {
+  padding: 64px 0px;
   display: grid;
-  grid-template-areas: ". content .";
   grid-template-columns: 16px auto 16px;
-  padding: 64px 0; }
+  grid-template-areas: ". content ."; }
   @media (min-width: 704px) {
     .section-content {
-      grid-template-columns: 40px auto 40px;
-      padding: 160px 0; } }
+      padding: 160px 0px;
+      grid-template-columns: 40px auto 40px; } }
   @media (min-width: 992px) {
     .section-content {
-      grid-template-columns: 64px auto 64px;
-      padding: 200px 0; } }
+      padding: 200px 0px;
+      grid-template-columns: 64px auto 64px; } }
+  @media (min-width: 1280px) {
+    .section-content {
+      grid-template-columns: auto 1200px auto; } }
   .section-content > div {
     grid-area: content; }
 
@@ -519,6 +522,35 @@ textarea {
   -webkit-appearance: none; }
 
 /* =============
+    Nav Background
+============= */
+#nav-bg {
+  position: fixed;
+  height: 50px;
+  width: 80vw;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  background-color: #262626;
+  overflow: hidden; }
+  #nav-bg svg {
+    background-color: rgba(0, 0, 0, 0); }
+    #nav-bg svg circle {
+      fill: #262626; }
+
+/*
+* Future CSS (use it today with postCSS-easing-gradients - note your settings colorMode: 'lrgb' and colorStops: 15)
+*/
+.currentscrim {
+  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), cubic-bezier(0.45, 0.05, 0.55, 0.95), #555555); }
+
+/*
+* Fallback CSS
+*/
+.fallbackscrim {
+  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0) 0%, rgba(85, 85, 85, 0.023105) 9.13%, rgba(85, 85, 85, 0.0685131) 17.35%, rgba(85, 85, 85, 0.132507) 24.8%, rgba(85, 85, 85, 0.21137) 31.63%, rgba(85, 85, 85, 0.301385) 38.01%, rgba(85, 85, 85, 0.398834) 44.08%, rgba(85, 85, 85, 0.5) 50%, rgba(85, 85, 85, 0.601166) 55.92%, rgba(85, 85, 85, 0.698615) 61.99%, rgba(85, 85, 85, 0.78863) 68.37%, rgba(85, 85, 85, 0.867493) 75.2%, rgba(85, 85, 85, 0.931487) 82.65%, rgba(85, 85, 85, 0.976895) 90.87%, #555555 100%); }
+
+/* =============
     Navigation
 ============= */
 nav {
@@ -570,32 +602,6 @@ nav {
 /* =============
     Nav Background
 ============= */
-#nav-bg {
-  position: fixed;
-  height: 50px;
-  width: 80vw;
-  top: 0;
-  right: 0;
-  z-index: 150;
-  background-color: #262626;
-  overflow: hidden; }
-  #nav-bg svg {
-    background-color: rgba(0, 0, 0, 0); }
-    #nav-bg svg circle {
-      fill: #262626; }
-
-/*
-* Future CSS (use it today with postCSS-easing-gradients - note your settings colorMode: 'lrgb' and colorStops: 15)
-*/
-.currentscrim {
-  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), cubic-bezier(0.45, 0.05, 0.55, 0.95), #555555); }
-
-/*
-* Fallback CSS
-*/
-.fallbackscrim {
-  background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0) 0%, rgba(85, 85, 85, 0.023105) 9.13%, rgba(85, 85, 85, 0.0685131) 17.35%, rgba(85, 85, 85, 0.132507) 24.8%, rgba(85, 85, 85, 0.21137) 31.63%, rgba(85, 85, 85, 0.301385) 38.01%, rgba(85, 85, 85, 0.398834) 44.08%, rgba(85, 85, 85, 0.5) 50%, rgba(85, 85, 85, 0.601166) 55.92%, rgba(85, 85, 85, 0.698615) 61.99%, rgba(85, 85, 85, 0.78863) 68.37%, rgba(85, 85, 85, 0.867493) 75.2%, rgba(85, 85, 85, 0.931487) 82.65%, rgba(85, 85, 85, 0.976895) 90.87%, #555555 100%); }
-
 /* =============
     Header
 ============= */
@@ -736,7 +742,6 @@ footer {
       opacity: 0.2; }
 
 /* =============
-    Hero
 ============= */
 #s-section-1 {
   align-items: flex-end;
@@ -1029,3 +1034,294 @@ footer {
             color: #FFF3F3; }
           #s-section-5 > div article div p:nth-child(3) a:hover, #s-section-5 > div article div p:nth-child(3) a:active {
             border-bottom: 4px solid #FFF3F3; }
+/* =============
+    Needs Hero
+============= */
+main {
+  position: relative; }
+  main > h1 {
+    font-size: 9.375rem;
+    position: absolute;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 100;
+    left: 0;
+    opacity: 0.1;
+    top: 30%;
+    transform: translateY(-50%);
+    white-space: nowrap; }
+    @media (min-width: 704px) {
+      main > h1 {
+        font-size: 15.625rem; } }
+    @media (min-width: 992px) {
+      main > h1 {
+        font-size: 25rem; } }
+
+#n-hero {
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-image: url("../img/needs/heropig.jpg");
+  background-size: cover;
+  background-position: 70%;
+  width: 100vw;
+  height: 95vh;
+  position: relative; }
+  #n-hero > div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". . ." ". title ."; }
+    #n-hero > div > div {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 250px;
+      opacity: .8; }
+    #n-hero > div article {
+      grid-area: title;
+      position: static;
+      z-index: 20;
+      margin-bottom: 20px; }
+      #n-hero > div article h1 {
+        color: #FCFCFC; }
+      #n-hero > div article h6 {
+        color: #FCFCFC; }
+
+/* =============
+    Needs Herd
+============= */
+#n-herd {
+  padding: 64px 0;
+  position: relative;
+  margin-top: 80px; }
+  #n-herd div {
+    display: grid;
+    grid-template-rows: auto 50vw; }
+    @media (min-width: 704px) {
+      #n-herd div {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; } }
+    #n-herd div article {
+      margin: 0px 16px;
+      margin-bottom: 40px; }
+      @media (min-width: 704px) {
+        #n-herd div article {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0px 160px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0 30px 0 64px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
+      #n-herd div article p:nth-last-child(1) {
+        padding-top: 30px; }
+    #n-herd div aside {
+      margin: 0px 16px;
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig1.jpg");
+      background-size: cover;
+      background-position: center;
+      width: auto;
+      height: 50vw; }
+      @media (min-width: 704px) {
+        #n-herd div aside {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div aside {
+          margin: 0px 160px; } }
+      @media (min-width: 704px) {
+        #n-herd div aside {
+          margin: auto 0;
+          height: 30vw; } }
+      #n-herd div aside::after {
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        background-color: #F2ECE2;
+        z-index: -1;
+        right: 0;
+        top: 0; }
+        @media (min-width: 704px) {
+          #n-herd div aside::after {
+            content: ''; } }
+
+/* =============
+    Needs space
+============= */
+#n-space {
+  margin-top: 80px;
+  position: relative;
+  background-color: #E3C68D; }
+  @media (min-width: 704px) {
+    #n-space div {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 992px) {
+    #n-space div {
+      grid-template-columns: 2fr 3fr; } }
+  #n-space div article {
+    padding: 40px 16px; }
+    @media (min-width: 704px) {
+      #n-space div article {
+        padding: 64px; } }
+    @media (min-width: 992px) {
+      #n-space div article {
+        padding: 160px 160px 160px 80px; } }
+    #n-space div article p:nth-last-child(1) {
+      padding-top: 30px; }
+  @media (min-width: 704px) {
+    #n-space div aside {
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig2.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%; } }
+
+/* =============
+    Needs Attention
+============= */
+#n-attention {
+  margin-top: 80px; }
+  @media (min-width: 704px) {
+    #n-attention {
+      display: grid;
+      grid-template-areas: ". content .";
+      grid-template-columns: auto 540px auto; } }
+  @media (min-width: 992px) {
+    #n-attention {
+      grid-template-columns: auto 800px auto; } }
+  @media (min-width: 704px) {
+    #n-attention div {
+      grid-area: content;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    #n-attention div {
+      height: 800px; } }
+  #n-attention div aside {
+    background-image: url("../img/needs/pig3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100vw; }
+    @media (min-width: 704px) {
+      #n-attention div aside {
+        height: 275px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        z-index: -1; } }
+    @media (min-width: 992px) {
+      #n-attention div aside {
+        height: 375px;
+        width: 500px; } }
+  #n-attention div article {
+    padding: 40px;
+    position: relative; }
+    @media (min-width: 704px) {
+      #n-attention div article {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 350px;
+        z-index: 10; } }
+    #n-attention div article::after {
+      background-color: #F2ECE2;
+      content: '';
+      display: block;
+      height: 60%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1; }
+      @media (min-width: 704px) {
+        #n-attention div article::after {
+          height: 100%;
+          opacity: 0.7; } }
+    #n-attention div article p:nth-last-child(1) {
+      padding-top: 30px; }
+
+/* =============
+    Needs trash
+============= */
+#n-trash {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  @media (min-width: 704px) {
+    #n-trash {
+      display: grid;
+      grid-template-areas: ". content .";
+      grid-template-columns: auto 540px auto; } }
+  @media (min-width: 992px) {
+    #n-trash {
+      grid-template-columns: auto 800px auto; } }
+  @media (min-width: 704px) {
+    #n-trash div {
+      grid-area: content;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    #n-trash div {
+      height: 800px; } }
+  #n-trash div aside {
+    background-image: url("../img/needs/pig4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100vw; }
+    @media (min-width: 704px) {
+      #n-trash div aside {
+        height: 275px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 400px;
+        z-index: -1; } }
+    @media (min-width: 992px) {
+      #n-trash div aside {
+        height: 375px;
+        width: 500px; } }
+  #n-trash div article {
+    padding: 40px;
+    position: relative; }
+    @media (min-width: 704px) {
+      #n-trash div article {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        z-index: 10; } }
+    #n-trash div article::after {
+      background-color: #F2ECE2;
+      content: '';
+      display: block;
+      height: 60%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1; }
+      @media (min-width: 704px) {
+        #n-trash div article::after {
+          height: 100%;
+          opacity: 0.7; } }
+    #n-trash div article p:nth-last-child(1) {
+      padding-top: 30px; }
