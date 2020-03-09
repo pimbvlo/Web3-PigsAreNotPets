@@ -967,12 +967,6 @@ footer svg g {
     z-index: 5;
   }
 }
-@media (min-width: 704px) {
-  #health div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
 
 #health-image {
   margin-bottom: -60px;
@@ -1031,8 +1025,8 @@ footer svg g {
     margin-bottom: 40px;
   }
   #children div {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
   #children div h2 {
     text-align: center;
@@ -1065,4 +1059,44 @@ footer svg g {
   left: 50px;
   font-size: 148px;
   opacity: 15%;
+}
+@media (min-width: 704px) {
+  #wallet {
+    background-color: #FCFCFC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left left right";
+  }
+  #wallet div {
+    background-color: rgba(252, 226, 211, 0.55);
+    grid-area: left;
+    padding-left: 56px;
+    margin-left: 25px;
+    padding-right: 40px;
+    z-index: 5;
+  }
+  #wallet div article {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #wallet > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 704px) {
+  #health div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #wallet div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #wallet > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
 }

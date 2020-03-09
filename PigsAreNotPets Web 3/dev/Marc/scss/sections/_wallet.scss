@@ -1,20 +1,19 @@
 /* =============
     pig health matters
 ============= */
-#wallet-image{
+
+#wallet-image {
   // margin-bottom: -60px;
-
   div {
-  position: relative;
-  background-image: url("../img/wallet-image.png");
-  background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60vh;
-  bottom: -110px;
-  // top: -90px;
-}
-
+    position: relative;
+    background-image: url("../img/wallet-image.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    bottom: -110px;
+    // top: -90px;
+  }
 }
 
 #wallet {
@@ -22,9 +21,7 @@
   margin-bottom: 70px;
   position: relative;
   z-index: -1;
-  // overflow: hidden;
-
-  h1{
+  h1 {
     position: absolute;
     transform: rotate(90deg);
     bottom: 150px;
@@ -33,11 +30,28 @@
     opacity: 15%;
   }
 
-    // div {
-    //   position: relative;
-    //   background-image: url("../img/sick-pig.png");
-    //   background-size: cover;
-    //   height: 60vh;
-    //   top: 150px;
-    // }
+  @include md{
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left left right";
+    // margin-bottom: -100px;
+
+    div {
+      background-color: $opacity-orange;
+      // opacity: 55%;
+      grid-area: left;
+      padding-left: 56px;
+      margin-left: 25px;
+      // margin-right: 40px;
+      padding-right: 40px;
+      z-index: 5;
+
+      article{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        // padding-right: 40px;
+      }
+    }
+  }
 }
