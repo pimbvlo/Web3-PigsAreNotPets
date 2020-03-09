@@ -24,6 +24,11 @@
             @include lg{
                 padding: 160px 160px 160px 80px;
             }
+
+            p:nth-last-child(1){
+
+                padding-top: 30px;
+            }
         }
 
 

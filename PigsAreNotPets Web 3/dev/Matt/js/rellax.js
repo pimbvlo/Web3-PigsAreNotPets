@@ -56,4 +56,13 @@ var rellax7 = new Rellax('.rellax7', {
   vertical: true
 });
 
-console.log([rellax, rellax0, rellax1, rellax2, rellax3, rellax4, rellax5, rellax6, rellax7]);
+var rellax2horiz = new Rellax('.rellax2horiz', {
+  speed: -7,
+  center: false,
+  wrapper: null,
+  vertical: false
+});
+
+
+
+console.log([rellax, rellax0, rellax1, rellax2, rellax3, rellax4, rellax5, rellax6, rellax7, rellax2horiz]);

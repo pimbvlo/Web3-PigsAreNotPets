@@ -23,6 +23,11 @@
             flex-direction: column;
             justify-content: center;
             }
+
+            p:nth-last-child(1){
+
+                padding-top: 30px;
+            }
         }
         aside{
             @include standard-margin;
@@ -50,6 +55,7 @@
                     content: '';
                 }
             }
+
 
         }
     }

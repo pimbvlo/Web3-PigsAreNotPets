@@ -338,6 +338,9 @@ ul {
     .section-content {
       padding: 200px 0px;
       grid-template-columns: 64px auto 64px; } }
+  @media (min-width: 1280px) {
+    .section-content {
+      grid-template-columns: auto 1200px auto; } }
   .section-content > div {
     grid-area: content; }
 
@@ -370,16 +373,16 @@ h1 {
 h2 {
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.625rem;
+  line-height: 2rem;
   margin-bottom: 20px; }
   @media (min-width: 704px) {
     h2 {
-      font-size: 1.5rem;
-      line-height: 2rem; } }
+      font-size: 1.75rem;
+      line-height: 2.25rem; } }
   @media (min-width: 992px) {
     h2 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       line-height: 2.5rem; } }
 
 h6 {
@@ -404,13 +407,19 @@ p {
     p {
       font-size: 1.375rem;
       line-height: 1.625rem; } }
-  p span {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.625rem;
+  p a {
+    font-family: "brandon-grotesque", sans-serif;
     text-transform: uppercase;
-    display: block;
-    margin-top: 20px; }
+    letter-spacing: 0.046875rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 1rem;
+    line-height: 1.625rem; }
+  p a:link, p a:visited {
+    color: #000; }
+  p a:hover, p a:active {
+    border-bottom: 4px solid #E5B862; }
 
 /* =============
     Buttons
@@ -788,6 +797,8 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: center; } }
+      #n-herd div article p:nth-last-child(1) {
+        padding-top: 30px; }
     #n-herd div aside {
       margin: 0px 16px;
       background-repeat: no-repeat;
@@ -841,6 +852,8 @@ main {
     @media (min-width: 992px) {
       #n-space div article {
         padding: 160px 160px 160px 80px; } }
+    #n-space div article p:nth-last-child(1) {
+      padding-top: 30px; }
   @media (min-width: 704px) {
     #n-space div aside {
       background-repeat: no-repeat;
@@ -916,6 +929,8 @@ main {
         #n-attention div article::after {
           height: 100%;
           opacity: 0.7; } }
+    #n-attention div article p:nth-last-child(1) {
+      padding-top: 30px; }
 
 /* =============
     Needs trash
@@ -984,3 +999,5 @@ main {
         #n-trash div article::after {
           height: 100%;
           opacity: 0.7; } }
+    #n-trash div article p:nth-last-child(1) {
+      padding-top: 30px; }

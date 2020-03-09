@@ -27,6 +27,9 @@ ul{
         padding: 200px 0px;
         grid-template-columns: 64px auto 64px;
     }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
     >div{
         grid-area: content;
