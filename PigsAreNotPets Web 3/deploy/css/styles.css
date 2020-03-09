@@ -702,3 +702,635 @@ footer {
 /* =============
     Hero
 ============= */
+#i-section-1 {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative; }
+  #i-section-1 > div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". . ." ". title ."; }
+    #i-section-1 > div > div {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 250px;
+      opacity: 0.8; }
+    #i-section-1 > div article {
+      grid-area: title;
+      position: static;
+      z-index: 20;
+      margin-bottom: 20px; }
+      #i-section-1 > div article h1 {
+        color: #FCFCFC; }
+      #i-section-1 > div article h6 {
+        color: #FCFCFC; }
+      #i-section-1 > div article > aside {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 20;
+        background-color: black; }
+      #i-section-1 > div article iframe {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        filter: grayscale(1); }
+
+/* =============
+    Needs Hero
+============= */
+main {
+  position: relative; }
+  main > h1 {
+    font-size: 9.375rem;
+    position: absolute;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 100;
+    left: 0;
+    opacity: 0.1;
+    top: 30%;
+    transform: translateY(-50%);
+    white-space: nowrap; }
+    @media (min-width: 704px) {
+      main > h1 {
+        font-size: 15.625rem; } }
+    @media (min-width: 992px) {
+      main > h1 {
+        font-size: 25rem; } }
+
+#n-hero {
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-image: url("../img/needs/heropig.jpg");
+  background-size: cover;
+  background-position: 70%;
+  width: 100vw;
+  height: 95vh;
+  position: relative; }
+  #n-hero > div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". . ." ". title ."; }
+    #n-hero > div > div {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 250px;
+      opacity: .8; }
+    #n-hero > div article {
+      grid-area: title;
+      position: static;
+      z-index: 20;
+      margin-bottom: 20px; }
+      #n-hero > div article h1 {
+        color: #FCFCFC; }
+      #n-hero > div article h6 {
+        color: #FCFCFC; }
+
+/* =============
+    Needs Herd
+============= */
+#n-herd {
+  padding: 64px 0;
+  position: relative;
+  margin-top: 80px; }
+  #n-herd div {
+    display: grid;
+    grid-template-rows: auto 50vw; }
+    @media (min-width: 704px) {
+      #n-herd div {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; } }
+    #n-herd div article {
+      margin: 0px 16px;
+      margin-bottom: 40px; }
+      @media (min-width: 704px) {
+        #n-herd div article {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0px 160px; } }
+      @media (min-width: 992px) {
+        #n-herd div article {
+          margin: 0 30px 0 64px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
+      #n-herd div article p:nth-last-child(1) {
+        padding-top: 30px; }
+    #n-herd div aside {
+      margin: 0px 16px;
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig1.jpg");
+      background-size: cover;
+      background-position: center;
+      width: auto;
+      height: 50vw; }
+      @media (min-width: 704px) {
+        #n-herd div aside {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #n-herd div aside {
+          margin: 0px 160px; } }
+      @media (min-width: 704px) {
+        #n-herd div aside {
+          margin: auto 0;
+          height: 30vw; } }
+      #n-herd div aside::after {
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        background-color: #F2ECE2;
+        z-index: -1;
+        right: 0;
+        top: 0; }
+        @media (min-width: 704px) {
+          #n-herd div aside::after {
+            content: ''; } }
+
+/* =============
+    Needs space
+============= */
+#n-space {
+  margin-top: 80px;
+  position: relative;
+  background-color: #E3C68D; }
+  @media (min-width: 704px) {
+    #n-space div {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 992px) {
+    #n-space div {
+      grid-template-columns: 2fr 3fr; } }
+  #n-space div article {
+    padding: 40px 16px; }
+    @media (min-width: 704px) {
+      #n-space div article {
+        padding: 64px; } }
+    @media (min-width: 992px) {
+      #n-space div article {
+        padding: 160px 160px 160px 80px; } }
+    #n-space div article p:nth-last-child(1) {
+      padding-top: 30px; }
+  @media (min-width: 704px) {
+    #n-space div aside {
+      background-repeat: no-repeat;
+      background-image: url("../img/needs/pig2.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%; } }
+
+/* =============
+    Needs Attention
+============= */
+#n-attention {
+  margin-top: 80px; }
+  @media (min-width: 704px) {
+    #n-attention {
+      display: grid;
+      grid-template-areas: ". content .";
+      grid-template-columns: auto 540px auto; } }
+  @media (min-width: 992px) {
+    #n-attention {
+      grid-template-columns: auto 800px auto; } }
+  @media (min-width: 704px) {
+    #n-attention div {
+      grid-area: content;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    #n-attention div {
+      height: 800px; } }
+  #n-attention div aside {
+    background-image: url("../img/needs/pig3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100vw; }
+    @media (min-width: 704px) {
+      #n-attention div aside {
+        height: 275px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        z-index: -1; } }
+    @media (min-width: 992px) {
+      #n-attention div aside {
+        height: 375px;
+        width: 500px; } }
+  #n-attention div article {
+    padding: 40px;
+    position: relative; }
+    @media (min-width: 704px) {
+      #n-attention div article {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 350px;
+        z-index: 10; } }
+    #n-attention div article::after {
+      background-color: #F2ECE2;
+      content: '';
+      display: block;
+      height: 60%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1; }
+      @media (min-width: 704px) {
+        #n-attention div article::after {
+          height: 100%;
+          opacity: 0.7; } }
+    #n-attention div article p:nth-last-child(1) {
+      padding-top: 30px; }
+
+/* =============
+    Needs trash
+============= */
+#n-trash {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  @media (min-width: 704px) {
+    #n-trash {
+      display: grid;
+      grid-template-areas: ". content .";
+      grid-template-columns: auto 540px auto; } }
+  @media (min-width: 992px) {
+    #n-trash {
+      grid-template-columns: auto 800px auto; } }
+  @media (min-width: 704px) {
+    #n-trash div {
+      grid-area: content;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    #n-trash div {
+      height: 800px; } }
+  #n-trash div aside {
+    background-image: url("../img/needs/pig4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100vw; }
+    @media (min-width: 704px) {
+      #n-trash div aside {
+        height: 275px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 400px;
+        z-index: -1; } }
+    @media (min-width: 992px) {
+      #n-trash div aside {
+        height: 375px;
+        width: 500px; } }
+  #n-trash div article {
+    padding: 40px;
+    position: relative; }
+    @media (min-width: 704px) {
+      #n-trash div article {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        z-index: 10; } }
+    #n-trash div article::after {
+      background-color: #F2ECE2;
+      content: '';
+      display: block;
+      height: 60%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1; }
+      @media (min-width: 704px) {
+        #n-trash div article::after {
+          height: 100%;
+          opacity: 0.7; } }
+    #n-trash div article p:nth-last-child(1) {
+      padding-top: 30px; }
+
+/* =============
+    Hero
+============= */
+#s-section-1 {
+  align-items: flex-end;
+  background-image: url("../img/Sanctuaries/Hero/Hero.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 95vh; }
+  @media (min-width: 704px) {
+    #s-section-1 {
+      background-position: center; } }
+  @media (min-width: 992px) {
+    #s-section-1 {
+      background-size: 104% auto; } }
+  #s-section-1 > div {
+    align-items: flex-end;
+    display: flex;
+    height: 280px;
+    padding: 0 24px 40px;
+    width: 100%; }
+    @media (min-width: 704px) {
+      #s-section-1 > div {
+        height: 328px;
+        padding: 0; } }
+    #s-section-1 > div article {
+      padding-top: 4px; }
+      @media (min-width: 704px) {
+        #s-section-1 > div article {
+          margin: 0 auto 56px 104px;
+          padding: 0; } }
+      @media (min-width: 992px) {
+        #s-section-1 > div article {
+          margin: 64px 96px; } }
+      #s-section-1 > div article h1 {
+        color: #FCFCFC; }
+
+/* =============
+    Stats
+============= */
+@media (min-width: 992px) {
+  #section-2 {
+    grid-template-columns: auto 640px auto; } }
+
+#section-2 > div article h2 {
+  color: #816A72;
+  font-family: "sofia-pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center; }
+  @media (min-width: 704px) {
+    #section-2 > div article h2 {
+      font-size: 2rem;
+      line-height: 2.625rem; } }
+  @media (min-width: 992px) {
+    #section-2 > div article h2 {
+      font-size: 2.5rem;
+      line-height: 3.5rem; } }
+
+/* =============
+    Pot-Bellied
+============= */
+#s-section-3 {
+  background-color: #FFF3F3; }
+  @media (min-width: 992px) {
+    #s-section-3 {
+      height: 352px;
+      padding: 80px 0;
+      grid-template-columns: auto 832px auto;
+      margin-bottom: 192px; } }
+  @media (min-width: 1280px) {
+    #s-section-3 {
+      margin-bottom: 400px; } }
+  @media (min-width: 704px) {
+    #s-section-3 > div {
+      display: grid;
+      grid-template-columns: 400px auto;
+      grid-template-areas: "article aside"; } }
+  #s-section-3 > div article {
+    color: #262626;
+    grid-area: article;
+    z-index: 100;
+    padding-bottom: 56px; }
+    @media (min-width: 704px) {
+      #s-section-3 > div article {
+        padding: 0; } }
+    #s-section-3 > div article h2 {
+      padding-bottom: 24px; }
+      @media (min-width: 704px) {
+        #s-section-3 > div article h2 {
+          padding-bottom: 16px; } }
+    #s-section-3 > div article p:nth-child(3) {
+      padding-top: 32px; }
+      #s-section-3 > div article p:nth-child(3) a:link, #s-section-3 > div article p:nth-child(3) a:visited {
+        color: #1A0009; }
+      #s-section-3 > div article p:nth-child(3) a:hover, #s-section-3 > div article p:nth-child(3) a:active {
+        border-bottom: 4px solid #1A0009; }
+  #s-section-3 > div aside {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    margin-top: 0; }
+    @media (min-width: 704px) {
+      #s-section-3 > div aside {
+        position: relative; } }
+    #s-section-3 > div aside figure {
+      background-image: url("../img/Sanctuaries/PotBellied/PotBelly.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: auto 120%;
+      height: 256px;
+      width: 100%; }
+      @media (min-width: 704px) {
+        #s-section-3 > div aside figure {
+          position: absolute;
+          right: 0;
+          bottom: -32px;
+          z-index: 50;
+          width: 60vw; } }
+      @media (min-width: 992px) {
+        #s-section-3 > div aside figure {
+          right: 0;
+          bottom: -160px;
+          width: 472px;
+          height: 400px; } }
+      @media (min-width: 1280px) {
+        #s-section-3 > div aside figure {
+          top: 160px;
+          width: 504px;
+          height: 504px; } }
+
+/* =============
+    Sanctuary
+============= */
+@media (min-width: 704px) {
+  #s-section-4 {
+    margin: 64px 40px 280px; } }
+
+@media (min-width: 992px) {
+  #s-section-4 {
+    margin: 64px 160px 400px; } }
+
+@media (min-width: 1280px) {
+  #s-section-4 {
+    margin: 64px 304px 504px; } }
+
+#s-section-4 > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "article" "figure"; }
+  @media (min-width: 704px) {
+    #s-section-4 > div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "article figure"; } }
+  #s-section-4 > div article {
+    grid-area: article;
+    background-color: rgba(242, 236, 226, 0.7);
+    z-index: 100; }
+    @media (min-width: 704px) {
+      #s-section-4 > div article {
+        width: 60vw;
+        padding: 0; } }
+    @media (min-width: 992px) {
+      #s-section-4 > div article {
+        width: 56vw; } }
+    @media (min-width: 1280px) {
+      #s-section-4 > div article {
+        width: 40vw; } }
+    @media (min-width: 704px) {
+      #s-section-4 > div article > div {
+        padding: 40px 0; } }
+    #s-section-4 > div article > div h2 {
+      margin-bottom: 24px; }
+      @media (min-width: 704px) {
+        #s-section-4 > div article > div h2 {
+          margin-bottom: 16px; } }
+    #s-section-4 > div article > div p:nth-child(3) {
+      padding-top: 32px; }
+      #s-section-4 > div article > div p:nth-child(3) a:link, #s-section-4 > div article > div p:nth-child(3) a:visited {
+        color: #1A0009; }
+      #s-section-4 > div article > div p:nth-child(3) a:hover, #s-section-4 > div article > div p:nth-child(3) a:active {
+        border-bottom: 4px solid #1A0009; }
+  #s-section-4 > div aside {
+    position: relative;
+    grid-area: figure; }
+    @media (min-width: 704px) {
+      #s-section-4 > div aside {
+        display: initial; } }
+    #s-section-4 > div aside figure {
+      background-image: url("../img/Sanctuaries/Sanctuaries/Sanctuaries.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: auto 120%;
+      display: none; }
+      @media (min-width: 704px) {
+        #s-section-4 > div aside figure {
+          background-size: cover;
+          background-position: center;
+          display: initial;
+          position: absolute;
+          right: 0;
+          margin-top: 224px;
+          z-index: 50;
+          width: 55vw;
+          height: 400px; } }
+      @media (min-width: 992px) {
+        #s-section-4 > div aside figure {
+          margin-left: 80px;
+          margin-top: 352px;
+          width: 60vw;
+          height: 400px; } }
+      @media (min-width: 1280px) {
+        #s-section-4 > div aside figure {
+          width: 30vw;
+          height: 504px; } }
+
+/* =============
+    Mini-Pigs
+============= */
+#s-section-5 {
+  background-color: #1A0009;
+  margin-bottom: 64px; }
+  @media (min-width: 704px) {
+    #s-section-5 {
+      margin-bottom: 96px; } }
+  @media (min-width: 992px) {
+    #s-section-5 {
+      margin-bottom: 200px; } }
+  #s-section-5 > div {
+    display: grid;
+    grid-template-areas: "aside" "article";
+    grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 704px) {
+      #s-section-5 > div {
+        grid-template-areas: "aside article";
+        grid-template-columns: auto 50%; } }
+    @media (min-width: 992px) {
+      #s-section-5 > div {
+        grid-template-columns: auto 40%; } }
+    @media (min-width: 1280px) {
+      #s-section-5 > div {
+        grid-template-columns: 50% auto; } }
+    #s-section-5 > div aside {
+      grid-area: aside; }
+      #s-section-5 > div aside figure {
+        background-image: url("../img/Sanctuaries/MiniPigs/MiniPig.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        opacity: 0.85;
+        width: 100%; }
+        @media (min-width: 704px) {
+          #s-section-5 > div aside figure {
+            background-position: 80% center;
+            height: 100%; } }
+    #s-section-5 > div article {
+      display: grid;
+      grid-area: article;
+      grid-template-areas: ". content .";
+      grid-template-columns: 16px auto 16px;
+      padding: 64px 0; }
+      @media (min-width: 704px) {
+        #s-section-5 > div article {
+          grid-template-columns: 40px auto 40px;
+          padding: 80px 0; } }
+      @media (min-width: 992px) {
+        #s-section-5 > div article {
+          grid-template-columns: 80px auto 80px;
+          padding: 120px 0; } }
+      @media (min-width: 992px) {
+        #s-section-5 > div article {
+          grid-template-columns: 80px auto 280px;
+          padding: 120px 0; } }
+      #s-section-5 > div article > div {
+        grid-area: content; }
+      #s-section-5 > div article div {
+        color: #FCFCFC; }
+        #s-section-5 > div article div h2 {
+          padding-bottom: 24px; }
+          @media (min-width: 704px) {
+            #s-section-5 > div article div h2 {
+              padding-bottom: 16px; } }
+        #s-section-5 > div article div p:nth-child(3) {
+          padding-top: 32px; }
+          #s-section-5 > div article div p:nth-child(3) a:link, #s-section-5 > div article div p:nth-child(3) a:visited {
+            color: #FFF3F3; }
+          #s-section-5 > div article div p:nth-child(3) a:hover, #s-section-5 > div article div p:nth-child(3) a:active {
+            border-bottom: 4px solid #FFF3F3; }
