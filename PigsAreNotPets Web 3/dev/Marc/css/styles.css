@@ -892,5 +892,58 @@ footer svg g {
 }
 
 /* =============
+    Hero
+============= */
+#hero {
+  align-items: flex-end;
+  background-image: url("../img/pig-mud-hero.png");
+  background-position: 30% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 90vh;
+}
+@media (min-width: 704px) {
+  #hero {
+    background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    background-size: 104% auto;
+  }
+}
+#hero > div {
+  align-items: flex-end;
+  display: flex;
+  height: 280px;
+  padding: 0 24px 40px;
+  width: 100%;
+}
+@media (min-width: 704px) {
+  #hero > div {
+    height: 328px;
+    padding: 0;
+  }
+}
+#hero > div article {
+  padding-top: 4px;
+}
+@media (min-width: 704px) {
+  #hero > div article {
+    margin: 0 auto 56px 104px;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  #hero > div article {
+    margin: 64px 96px;
+  }
+}
+#hero > div article h1 {
+  color: #FCFCFC;
+}
+
+/* =============
     pig health matters
 ============= */
