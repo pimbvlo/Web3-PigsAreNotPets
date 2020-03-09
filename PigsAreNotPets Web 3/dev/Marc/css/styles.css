@@ -967,6 +967,21 @@ footer svg g {
     z-index: 5;
   }
 }
+@media (min-width: 992px) {
+  #health {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "left left left left right";
+    margin-bottom: 200px;
+  }
+  #health div {
+    grid-area: left;
+  }
+  #health div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+}
 #health #health-extra-text {
   display: none;
 }
@@ -976,6 +991,9 @@ footer svg g {
     position: relative;
     top: 530px;
   }
+}
+#health #health-extra-text-2 {
+  display: none;
 }
 
 #health-image {
@@ -1020,6 +1038,13 @@ footer svg g {
     z-index: 5;
   }
 }
+@media (min-width: 992px) {
+  #health-image div {
+    background-size: 32%;
+    left: 445px;
+    top: -400px;
+  }
+}
 
 /* =============
     pig health matters
@@ -1039,6 +1064,11 @@ footer svg g {
   }
   #children div h2 {
     text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #children {
+    margin-top: 100px;
   }
 }
 
@@ -1079,8 +1109,17 @@ footer svg g {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
+  #wallet > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
 }
 @media (min-width: 704px) {
+  #health div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
   #health div {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1093,6 +1132,18 @@ footer svg g {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 992px) {
+  #health div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  #wallet div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
   }
 }
 #wallet h1 {

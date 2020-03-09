@@ -8,12 +8,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "left right";
-    // margin-bottom: -100px;
+
 
     div {
       grid-area: left;
       padding-left: 56px;
       z-index: 5;
+    }
+  }
+  @include lg{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "left left left left right";
+    margin-bottom: 200px;
+    div{
+      grid-area: left;
     }
   }
 
@@ -24,6 +32,10 @@
       position: relative;
       top: 530px;
     }
+  }
+
+  #health-extra-text-2{
+    display: none;
   }
 }
 
@@ -67,8 +79,14 @@
       height: 80vh;
       left: 250px;
       z-index: 5;
-
-
+    }
+    @include lg{
+      background-size: 32%;
+      left: 445px;
+      // top: 0;
+      top: -400px;
+      // bottom: -100px;
+      // height: 100vh;
     }
   }
 }
