@@ -392,15 +392,15 @@ h1 {
 h2 {
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem; }
+  font-size: 1.625rem;
+  line-height: 2rem; }
   @media (min-width: 704px) {
     h2 {
-      font-size: 1.5rem;
-      line-height: 2rem; } }
+      font-size: 1.75rem;
+      line-height: 2.25rem; } }
   @media (min-width: 992px) {
     h2 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       line-height: 2.5rem; } }
 
 h6 {
@@ -429,6 +429,19 @@ p {
     p {
       font-size: 1.375rem;
       line-height: 2rem; } }
+  p a {
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.046875rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 1rem;
+    line-height: 1.625rem; }
+  p a:link, p a:visited {
+    color: #FFF3F3; }
+  p a:hover, p a:active {
+    border-bottom: 4px solid #FFF3F3; }
 
 /* =============
     Buttons
@@ -545,9 +558,12 @@ nav {
           margin-bottom: 32px; } }
       nav ul li h6 a {
         text-decoration: none;
+        color: #FCFCFC;
+        transition: 0.25s; }
+      nav ul li h6 a:link, nav ul li h6 a:visited {
         color: #FCFCFC; }
-    nav ul li button:hover {
-      color: #262626; }
+      nav ul li h6 a:hover, nav ul li h6 a:active {
+        border-bottom: 4px solid #FCFCFC; }
   nav ul li:nth-last-child(1) {
     margin-bottom: 0; }
 
@@ -769,17 +785,17 @@ footer {
   color: #816A72;
   font-family: "sofia-pro", sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.875rem;
+  font-weight: 700;
+  line-height: 2rem;
   text-align: center; }
   @media (min-width: 704px) {
     #section-2 > div article h2 {
       font-size: 2rem;
-      line-height: 2.5rem; } }
+      line-height: 2.625rem; } }
   @media (min-width: 992px) {
     #section-2 > div article h2 {
       font-size: 2.5rem;
-      line-height: 3rem; } }
+      line-height: 3.5rem; } }
 
 /* =============
     Pot-Bellied
@@ -868,7 +884,7 @@ footer {
 
 @media (min-width: 1280px) {
   #s-section-4 {
-    margin: 64px 304px 600px; } }
+    margin: 64px 304px 504px; } }
 
 #s-section-4 > div {
   display: grid;
@@ -938,7 +954,7 @@ footer {
       @media (min-width: 1280px) {
         #s-section-4 > div aside figure {
           width: 30vw;
-          height: 600px; } }
+          height: 504px; } }
 
 /* =============
     Mini-Pigs

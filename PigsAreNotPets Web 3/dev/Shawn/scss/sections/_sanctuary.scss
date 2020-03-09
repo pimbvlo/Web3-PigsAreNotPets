@@ -9,7 +9,7 @@
         margin: 64px 160px 400px;
     }
     @include xl {
-        margin: 64px 304px 600px;
+        margin: 64px 304px 504px;
     }
 
     > div {
@@ -98,7 +98,7 @@
                 }
                 @include xl {
                     width: 30vw;
-                    height: 600px;
+                    height: 504px;
                 }
             }
         }

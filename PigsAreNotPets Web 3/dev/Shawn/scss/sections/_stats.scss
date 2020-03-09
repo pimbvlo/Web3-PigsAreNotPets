@@ -12,16 +12,16 @@
                 color: $sanctuary-dark-pink;
                 font-family: "sofia-pro", sans-serif;
                 font-size: rem-calc(24);
-                font-weight: 400;
-                line-height: rem-calc(30);
+                font-weight: 700;
+                line-height: rem-calc(32);
                 text-align: center;
                 @include md {
                     font-size: rem-calc(32);
-                    line-height: rem-calc(40);
+                    line-height: rem-calc(42);
                 }
                 @include lg {
                     font-size: rem-calc(40);
-                    line-height: rem-calc(48);
+                    line-height: rem-calc(56);
                 }
             }
         }

@@ -29,14 +29,14 @@ h1 {
 h2 {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 700;
-    font-size: rem-calc(20);
-    line-height: rem-calc(24);
+    font-size: rem-calc(26);
+    line-height: rem-calc(32);
     @include md {
-        font-size: rem-calc(24);
-        line-height: rem-calc(32);
+        font-size: rem-calc(28);
+        line-height: rem-calc(36);
     }
     @include lg {
-        font-size: rem-calc(28);
+        font-size: rem-calc(32);
         line-height: rem-calc(40);
     }
 }
@@ -67,6 +67,24 @@ p {
     @include lg {
         font-size: rem-calc(22);
         line-height: rem-calc(32);
+    }
+    a{
+        font-family: "brandon-grotesque", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: rem-calc(0.75);
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s;
+        font-size: rem-calc(16);
+        line-height: rem-calc(26);
+
+    }
+    a:link, a:visited{
+        color: $sanctuary-pink;
+
+    }
+    a:hover, a:active{
+        border-bottom: 4px solid $sanctuary-pink;
     }
 
 }

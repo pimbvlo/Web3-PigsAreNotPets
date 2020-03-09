@@ -46,12 +46,17 @@ nav {
                 a {
                     text-decoration: none;
                     color: $white;
+                    transition: 0.25s;
+                }
+                a:link, a:visited{
+                    color: $white;
+
+                }
+                a:hover, a:active{
+                    border-bottom: 4px solid $white;
                 }
             }
 
-            button:hover {
-                color: $charcoal;
-            }
         }
 
         li:nth-last-child(1) {
