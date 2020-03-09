@@ -23,6 +23,33 @@ html {
 body {
   margin: 0;
   background: $white;
+  // overflow: hidden;
+}
+
+main {
+    position: relative;
+
+
+
+    > h1 {
+        font-size: rem-calc(150);
+        position: absolute;
+        display: block;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        z-index: 100;
+        left: -50;
+        opacity: 0.1;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        @include md {
+            font-size: rem-calc(250);
+        }
+        @include lg {
+            font-size: rem-calc(400);
+        }
+    }
 }
 
 /**
