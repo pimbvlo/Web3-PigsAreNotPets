@@ -114,7 +114,14 @@
       // left: 0px;
     }
   }
+}
+
+a:link, a:visited{
+    color: $orange;
 
 
 
+}
+a:hover, a:active{
+    border-bottom: 4px solid $orange;
 }

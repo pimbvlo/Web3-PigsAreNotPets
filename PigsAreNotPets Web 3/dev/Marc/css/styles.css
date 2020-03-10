@@ -1068,6 +1068,14 @@ footer svg g {
   }
 }
 
+a:link, a:visited {
+  color: #F5BFA0;
+}
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0;
+}
+
 /* =============
     pig health matters
 ============= */
@@ -1093,6 +1101,14 @@ footer svg g {
     margin-left: 95px;
     margin-right: 95px;
   }
+}
+
+a:link, a:visited {
+  color: #F5BFA0;
+}
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0;
 }
 
 /* =============
@@ -1221,7 +1237,8 @@ footer svg g {
   }
 }
 #wallet #wallet-extra-text {
-  display: none;
+  position: relative;
+  top: 400px;
 }
 @media (min-width: 704px) {
   #wallet #wallet-extra-text {
@@ -1354,4 +1371,12 @@ footer svg g {
   #wallet #wallet-image-2 {
     top: 600px;
   }
+}
+
+a:link, a:visited {
+  color: #F5BFA0;
+}
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0;
 }

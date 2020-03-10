@@ -23,3 +23,13 @@
     margin-right: 95px;
   }
 }
+
+a:link, a:visited{
+    color: $orange;
+
+
+
+}
+a:hover, a:active{
+    border-bottom: 4px solid $orange;
+}
