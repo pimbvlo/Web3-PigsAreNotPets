@@ -1,0 +1,127 @@
+/* =============
+    pig health matters
+============= */
+#health {
+  background-color: $opacity-orange;
+  @include md {
+    background-color: $blank;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "left right";
+
+
+    div {
+      grid-area: left;
+      padding-left: 56px;
+      z-index: 5;
+    }
+  }
+  @include lg{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "left left left left ."
+    "left2 left2 left2 . ."
+    "left3 left3 . . .";
+    // margin-bottom: 200px;
+    padding-bottom: 0;
+    div{
+      grid-area: left;
+    }
+  }
+
+  #health-extra-text{
+    display: none;
+    @include md{
+      display: block;
+      position: relative;
+      top: 530px;
+    }
+    @include lg{
+      grid-area: left3;
+      top: 15px;
+
+    }
+  }
+
+  #health-extra-text-2{
+    display: none;
+    @include lg{
+      display: block;
+      grid-area: left2;
+      // padding-bottom: 75px;
+      padding-top: 25px;
+      // padding-bottom: 25px;
+      // padding-right: 70px;
+    }
+  }
+}
+
+
+// health image
+#health-image {
+  margin-bottom: -60px;
+  @include md{
+    margin-bottom: -435px;
+  }
+
+
+    div {
+      position: relative;
+      background-image: url("../img/sick-pig.png");
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      top: -90px;
+      @include md {
+        // position: relative;
+        top: -645px;
+        background-size: 45%;
+        height: 80vh;
+        left: 250px;
+        z-index: 5;
+      }
+      @include lg{
+        background-size: 35%;
+        left: 417px;
+        padding-top: 70px;
+        margin-top: 70px;
+        // margin-left: 100px;
+        // top: 2px;
+      }
+    }
+
+  #health-tablet-bg {
+    display: none;
+    @include md{
+        display: block;
+        position: absolute;
+        background-color: $opacity-orange;
+        height: 80vh;
+        width: 40vw;
+        top: 850px;
+        right: -200px;
+        background-image: none;
+        z-index: 1;
+      }
+    @include lg{
+      height: 70vh;
+      width: 25vw;
+      top: 1060px;
+      // padding-right: -300px;
+      // right: -00px;
+      // left: 0px;
+    }
+  }
+}
+
+a:link, a:visited{
+    color: $orange;
+
+
+
+}
+a:hover, a:active{
+    border-bottom: 4px solid $orange;
+}

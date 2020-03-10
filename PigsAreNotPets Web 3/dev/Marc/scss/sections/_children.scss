@@ -1,0 +1,35 @@
+/* =============
+    pig health matters
+============= */
+#children {
+  background-color: $opacity-orange;
+  // margin-bottom: -100px;
+  @include md {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+
+    div {
+      padding-left: 18px;
+      padding-right: 18px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  @include lg{
+    margin-left: 95px;
+    margin-right: 95px;
+  }
+}
+
+a:link, a:visited{
+    color: $orange;
+
+
+
+}
+a:hover, a:active{
+    border-bottom: 4px solid $orange;
+}
