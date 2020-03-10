@@ -32,9 +32,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
-  background: #FCFCFC;
-  font-family: "brandon-grotesque", sans-serif; }
+  margin: 0; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -317,6 +315,9 @@ template {
 /* =============
     Base
 ============= */
+main {
+  overflow: hidden; }
+
 figure {
   margin: 0;
   padding: 0; }
@@ -328,18 +329,18 @@ ul {
     list-style: none; }
 
 .section-content {
-  padding: 64px 0px;
   display: grid;
+  grid-template-areas: ". content .";
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". content ."; }
+  padding: 64px 0; }
   @media (min-width: 704px) {
     .section-content {
-      padding: 160px 0px;
-      grid-template-columns: 40px auto 40px; } }
+      grid-template-columns: 40px auto 40px;
+      padding: 160px 0; } }
   @media (min-width: 992px) {
     .section-content {
-      padding: 200px 0px;
-      grid-template-columns: 64px auto 64px; } }
+      grid-template-columns: 64px auto 64px;
+      padding: 200px 0; } }
   .section-content > div {
     grid-area: content; }
 
@@ -418,7 +419,7 @@ p {
   p a:link, p a:visited {
     color: #000; }
   p a:hover, p a:active {
-    border-bottom: 4px solid #E5B862; }
+    border-bottom: 4px solid #000; }
 
 /* =============
     Buttons
@@ -513,31 +514,40 @@ nav {
   nav ul li {
     display: none; }
     nav ul li h6 {
-      font-family: "sofia-pro", sans-serif;
       background-color: rgba(0, 0, 0, 0);
       border: none;
       cursor: pointer;
-      font-size: 1.75rem;
       padding: 10px 0;
       text-align: right;
-      transition: 0.25s;
       width: 100%;
       margin-bottom: 16px;
       text-decoration: none;
       color: #FCFCFC; }
-      @media (min-width: 704px) {
-        nav ul li h6 {
-          font-size: 2rem;
-          margin-bottom: 24px; } }
-      @media (min-width: 992px) {
-        nav ul li h6 {
-          font-size: 2.5rem;
-          margin-bottom: 32px; } }
       nav ul li h6 a {
+        font-family: "sofia-pro", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.046875rem;
+        font-weight: 700;
         text-decoration: none;
+        transition: 0.25s;
+        font-size: 1.75rem;
         color: #FCFCFC; }
-    nav ul li button:hover {
-      color: #262626; }
+        @media (min-width: 704px) {
+          nav ul li h6 a {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            letter-spacing: 0.0625rem; } }
+        @media (min-width: 992px) {
+          nav ul li h6 a {
+            font-size: 2.5rem;
+            margin-bottom: 32px;
+            letter-spacing: 0.078125rem; } }
+      nav ul li h6 a:link,
+      nav ul li h6 a:visited {
+        color: #FCFCFC; }
+      nav ul li h6 a:active,
+      nav ul li h6 a:hover {
+        border-bottom: 4px solid #FCFCFC; }
   nav ul li:nth-last-child(1) {
     margin-bottom: 0; }
 
@@ -546,7 +556,7 @@ nav {
 ============= */
 #nav-bg {
   position: fixed;
-  height: 50px;
+  height: 30px;
   width: 80vw;
   top: 0;
   right: 0;
@@ -574,6 +584,7 @@ nav {
     Header
 ============= */
 header {
+  overflow-x: hidden;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
   position: fixed;
   height: 64px;
@@ -589,6 +600,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    header > div figure a:active,
+    header > div figure a:hover {
+      border-bottom: none; }
     header > div #burger-container svg {
       height: 56px;
       cursor: pointer; }
@@ -602,7 +616,8 @@ footer {
   overflow: hidden; }
   footer .colorBar {
     height: 16px;
-    background-color: #816A72; }
+    background-color: #000;
+    opacity: 0.3; }
   footer article {
     margin: 40px 0;
     padding: 24px 0;
@@ -695,7 +710,7 @@ footer {
     fill: none;
     stroke-miterlimit: 10;
     stroke-width: 8px;
-    stroke: #816A72; }
+    stroke: #000; }
     @media (min-width: 704px) {
       footer svg {
         width: 768px;
@@ -712,125 +727,295 @@ footer {
 /* =============
     Hero
 ============= */
-#i-section-1 {
-  width: 100vw;
-  height: 95vh;
-  display: flex;
+#r-hero {
   align-items: flex-end;
-  position: relative;
-  overflow: hidden; }
-  #i-section-1 video {
-    position: absolute;
-    z-index: 0;
-    filter: grayscale(0.85) blur(5px);
-    transform-origin: center;
-    right: 0;
-    top: 0; }
-  #i-section-1 > div {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 60vh auto;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-areas: ". . ." ". title ."; }
-    #i-section-1 > div > div {
-      width: 100vw;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 10;
-      height: 250px;
-      opacity: 0.8; }
-    #i-section-1 > div article {
-      grid-area: title;
-      position: static;
-      z-index: 20;
-      margin-bottom: 20px; }
-      #i-section-1 > div article h1 {
-        color: #FCFCFC; }
-      #i-section-1 > div article h6 {
-        color: #FCFCFC; }
-      #i-section-1 > div article > aside {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        display: block;
-        z-index: 20;
-        background-color: black; }
-      #i-section-1 > div article iframe {
-        display: none;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        z-index: 10;
-        filter: grayscale(1); }
-
-/* =============
-    section 2
-============= */
-@media (min-width: 704px) {
-  #i-section-2 > div {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr; } }
-
-#i-section-2 > div > aside {
-  margin: 0px 16px;
+  background-image: url("../img/Risks/pig-mud-hero.png");
+  background-position: 30% 70%;
   background-repeat: no-repeat;
-  background-image: url("../img/Home/PigsNotPets.svg");
-  background-size: contain;
-  background-position: center;
-  width: auto;
-  height: 80vw; }
+  background-size: cover;
+  display: flex;
+  height: 95vh; }
   @media (min-width: 704px) {
-    #i-section-2 > div > aside {
-      margin: 0px 56px; } }
+    #r-hero {
+      background-position: 30% 70%; } }
   @media (min-width: 992px) {
-    #i-section-2 > div > aside {
-      margin: 0px 160px; } }
-  @media (min-width: 704px) {
-    #i-section-2 > div > aside {
-      margin: auto 0;
-      height: 30vw; } }
+    #r-hero {
+      background-size: 104% auto; } }
+  #r-hero > div {
+    align-items: flex-end;
+    display: flex;
+    height: 280px;
+    padding: 0 24px 40px;
+    width: 100%; }
+    @media (min-width: 704px) {
+      #r-hero > div {
+        height: 328px;
+        padding: 0; } }
+    #r-hero > div article {
+      padding-top: 4px; }
+      @media (min-width: 704px) {
+        #r-hero > div article {
+          margin: 0 auto 56px 104px;
+          padding: 0; } }
+      @media (min-width: 992px) {
+        #r-hero > div article {
+          margin: 64px 96px; } }
+      #r-hero > div article h1 {
+        color: #FCFCFC; }
 
 /* =============
-    section 3
+    pig health matters
 ============= */
-#i-section-3 {
-  margin-bottom: 30px; }
-  #i-section-3 > div section {
-    width: 90vw;
-    position: relative; }
-    #i-section-3 > div section article {
-      margin: 0px 16px; }
-      @media (min-width: 704px) {
-        #i-section-3 > div section article {
-          margin: 0px 56px; } }
-      @media (min-width: 992px) {
-        #i-section-3 > div section article {
-          margin: 0px 160px; } }
-      #i-section-3 > div section article::after {
+#health {
+  background-color: rgba(252, 226, 211, 0.55); }
+  @media (min-width: 704px) {
+    #health {
+      background-color: rgba(0, 0, 0, 0);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "left right"; }
+      #health div {
+        grid-area: left;
+        padding-left: 56px;
+        z-index: 5; } }
+  @media (min-width: 992px) {
+    #health {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "left left left left ." "left2 left2 left2 . ." "left3 left3 . . .";
+      padding-bottom: 0; }
+      #health div {
+        grid-area: left; } }
+  #health #health-extra-text {
+    display: none; }
+    @media (min-width: 704px) {
+      #health #health-extra-text {
+        display: block;
+        position: relative;
+        top: 530px; } }
+    @media (min-width: 992px) {
+      #health #health-extra-text {
+        grid-area: left3;
+        top: 15px; } }
+  #health #health-extra-text-2 {
+    display: none; }
+    @media (min-width: 992px) {
+      #health #health-extra-text-2 {
+        display: block;
+        grid-area: left2;
+        padding-top: 25px; } }
+
+#health-image {
+  margin-bottom: -60px; }
+  @media (min-width: 704px) {
+    #health-image {
+      margin-bottom: -435px; } }
+  #health-image div {
+    position: relative;
+    background-image: url("../img/Risks/sick-pig.png");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    top: -90px; }
+    @media (min-width: 704px) {
+      #health-image div {
+        top: -645px;
+        background-size: 45%;
+        height: 80vh;
+        left: 250px;
+        z-index: 5; } }
+    @media (min-width: 992px) {
+      #health-image div {
+        background-size: 35%;
+        left: 417px;
+        padding-top: 70px;
+        margin-top: 70px; } }
+  #health-image #health-tablet-bg {
+    display: none; }
+    @media (min-width: 704px) {
+      #health-image #health-tablet-bg {
         display: block;
         position: absolute;
-        width: 100vw;
-        height: 140vw;
-        z-index: -1;
-        left: 0;
-        bottom: 10px;
-        content: ''; }
-    #i-section-3 > div section aside {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100vw;
-      height: 80vw;
-      filter: grayscale(1); }
-    #i-section-3 > div section #smith {
-      background-image: url("https://www.nationalgeographic.com/content/dam/news/photos/000/842/84231.ngsversion.1422286609346.adapt.1900.1.jpg");
+        background-color: rgba(252, 226, 211, 0.55);
+        height: 80vh;
+        width: 40vw;
+        top: 850px;
+        right: -200px;
+        background-image: none;
+        z-index: 1; } }
+    @media (min-width: 992px) {
+      #health-image #health-tablet-bg {
+        height: 70vh;
+        width: 25vw;
+        top: 1060px; } }
+
+a:link, a:visited {
+  color: #F5BFA0; }
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0; }
+
+/* =============
+    pig health matters
+============= */
+#children {
+  background-color: rgba(252, 226, 211, 0.55); }
+  @media (min-width: 704px) {
+    #children {
+      padding-top: 70px;
+      padding-bottom: 70px;
       margin-bottom: 40px; }
-    #i-section-3 > div section #walter {
-      background-image: url("https://www.hachettebookgroup.com/wp-content/uploads/2017/06/jenkinsandwalter.jpg?resize=500%2C513"); }
+      #children div {
+        padding-left: 18px;
+        padding-right: 18px; }
+        #children div h2 {
+          text-align: center; } }
+  @media (min-width: 992px) {
+    #children {
+      margin-left: 95px;
+      margin-right: 95px; } }
+
+a:link, a:visited {
+  color: #F5BFA0; }
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0; }
+
+/* =============
+    pig health matters
+============= */
+#wallet {
+  background-color: rgba(252, 226, 211, 0.55);
+  margin-top: 200px;
+  position: relative;
+  z-index: 1; }
+  @media (min-width: 704px) {
+    #wallet {
+      background-color: rgba(0, 0, 0, 0);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "left left right";
+      margin-top: -40px;
+      margin-bottom: 300px; }
+      #wallet div {
+        grid-area: left;
+        margin-left: 25px;
+        margin-right: 30px;
+        z-index: 2; }
+        #wallet div article {
+          background-color: rgba(252, 226, 211, 0.55);
+          padding-top: 40px;
+          padding-bottom: 40px;
+          padding-right: 40px;
+          margin-bottom: -100px;
+          padding-left: 40px; } }
+  @media (min-width: 992px) {
+    #wallet {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "left left left left right" "left2 left2 left2 . .";
+      margin-bottom: 200px;
+      padding-bottom: 0; }
+      #wallet div {
+        grid-area: left; } }
+  #wallet h1 {
+    font-size: 9.375rem;
+    position: absolute;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 100;
+    left: 0;
+    opacity: 0.1;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap; }
+    @media (min-width: 704px) {
+      #wallet h1 {
+        font-size: 15.625rem; } }
+    @media (min-width: 992px) {
+      #wallet h1 {
+        font-size: 25rem; } }
+  #wallet #wallet-image {
+    position: relative;
+    background-image: url("../img/Risks/wallet-image.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 70vw;
+    bottom: 450px;
+    left: 30px; }
+    @media (min-width: 704px) {
+      #wallet #wallet-image {
+        background-size: 57%;
+        background-color: rgba(0, 0, 0, 0);
+        left: 305px;
+        bottom: 97px;
+        z-index: 1; } }
+    @media (min-width: 992px) {
+      #wallet #wallet-image {
+        background-size: 45%;
+        left: 470px;
+        bottom: 0px;
+        top: 140px; } }
+  #wallet #wallet-extra-text {
+    position: relative;
+    top: 400px; }
+    @media (min-width: 704px) {
+      #wallet #wallet-extra-text {
+        position: relative;
+        display: block;
+        left: 250px;
+        top: 600px;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #wallet #wallet-extra-text {
+        top: 900px;
+        margin-left: 240px;
+        margin-right: 240px; } }
+  #wallet #wallet-extra-text-2 {
+    display: none; }
+    @media (min-width: 704px) {
+      #wallet #wallet-extra-text-2 {
+        display: none; } }
+    @media (min-width: 992px) {
+      #wallet #wallet-extra-text-2 {
+        display: block;
+        position: relative;
+        top: -290px;
+        left: -48px;
+        margin-right: 70px;
+        margin-left: 70px;
+        background-color: rgba(0, 0, 0, 0);
+        grid-area: left2; }
+        #wallet #wallet-extra-text-2 article {
+          background-color: rgba(0, 0, 0, 0); } }
+  #wallet #wallet-image-2 {
+    display: none; }
+    @media (min-width: 704px) {
+      #wallet #wallet-image-2 {
+        display: block;
+        position: relative;
+        background-image: url("../img/Risks/wallet-image-2.png");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 60vw;
+        top: 500px;
+        right: 60px;
+        z-index: 1; } }
+    @media (min-width: 992px) {
+      #wallet #wallet-image-2 {
+        top: 600px; } }
+
+a:link, a:visited {
+  color: #F5BFA0; }
+
+a:hover, a:active {
+  border-bottom: 4px solid #F5BFA0; }
 
 /* =============
     Needs Hero
@@ -1422,292 +1607,167 @@ main {
 /* =============
     Hero
 ============= */
-#r-hero {
-  align-items: flex-end;
-  background-image: url("../img/Risks/pig-mud-hero.png");
-  background-position: 30% 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
+#i-section-1 {
+  width: 100vw;
+  height: 95vh;
   display: flex;
-  height: 95vh; }
-  @media (min-width: 704px) {
-    #r-hero {
-      background-position: 30% 70%; } }
-  @media (min-width: 992px) {
-    #r-hero {
-      background-size: 104% auto; } }
-  #r-hero > div {
-    align-items: flex-end;
-    display: flex;
-    height: 280px;
-    padding: 0 24px 40px;
-    width: 100%; }
-    @media (min-width: 704px) {
-      #r-hero > div {
-        height: 328px;
-        padding: 0; } }
-    #r-hero > div article {
-      padding-top: 4px; }
-      @media (min-width: 704px) {
-        #r-hero > div article {
-          margin: 0 auto 56px 104px;
-          padding: 0; } }
-      @media (min-width: 992px) {
-        #r-hero > div article {
-          margin: 64px 96px; } }
-      #r-hero > div article h1 {
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden; }
+  #i-section-1 h2, #i-section-1 h3, #i-section-1 h4, #i-section-1 h5, #i-section-1 h6 {
+    font-family: "brandon-grotesque", sans-serif; }
+  #i-section-1 video {
+    position: absolute;
+    z-index: 0;
+    filter: grayscale(0.85) blur(5px);
+    transform-origin: center;
+    right: 0;
+    top: 0; }
+  #i-section-1 > div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". . ." ". title ."; }
+    #i-section-1 > div > div {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      height: 250px;
+      opacity: 0.8; }
+    #i-section-1 > div article {
+      grid-area: title;
+      position: static;
+      z-index: 20;
+      margin-bottom: 20px; }
+      #i-section-1 > div article h1 {
         color: #FCFCFC; }
+      #i-section-1 > div article h6 {
+        color: #FCFCFC; }
+      #i-section-1 > div article > aside {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 20;
+        background-color: black; }
+      #i-section-1 > div article iframe {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        filter: grayscale(1); }
 
 /* =============
-    pig health matters
+    section 2
 ============= */
-#health {
-  background-color: rgba(252, 226, 211, 0.55); }
-  @media (min-width: 704px) {
-    #health {
-      background-color: rgba(0, 0, 0, 0);
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "left right"; }
-      #health div {
-        grid-area: left;
-        padding-left: 56px;
-        z-index: 5; } }
-  @media (min-width: 992px) {
-    #health {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "left left left left ." "left2 left2 left2 . ." "left3 left3 . . .";
-      padding-bottom: 0; }
-      #health div {
-        grid-area: left; } }
-  #health #health-extra-text {
-    display: none; }
-    @media (min-width: 704px) {
-      #health #health-extra-text {
-        display: block;
-        position: relative;
-        top: 530px; } }
-    @media (min-width: 992px) {
-      #health #health-extra-text {
-        grid-area: left3;
-        top: 15px; } }
-  #health #health-extra-text-2 {
-    display: none; }
-    @media (min-width: 992px) {
-      #health #health-extra-text-2 {
-        display: block;
-        grid-area: left2;
-        padding-top: 25px; } }
+#i-section-2 h2, #i-section-2 h3, #i-section-2 h4, #i-section-2 h5, #i-section-2 h6 {
+  font-family: "brandon-grotesque", sans-serif; }
 
-#health-image {
-  margin-bottom: -60px; }
+@media (min-width: 704px) {
+  #i-section-2 > div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; } }
+
+#i-section-2 > div > aside {
+  margin: 0px 16px;
+  background-repeat: no-repeat;
+  background-image: url("../img/Home/PigsNotPets.svg");
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 80vw; }
   @media (min-width: 704px) {
-    #health-image {
-      margin-bottom: -435px; } }
-  #health-image div {
-    position: relative;
-    background-image: url("../img/Risks/sick-pig.png");
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-    top: -90px; }
+    #i-section-2 > div > aside {
+      margin: 0px 56px; } }
+  @media (min-width: 992px) {
+    #i-section-2 > div > aside {
+      margin: 0px 160px; } }
+  @media (min-width: 704px) {
+    #i-section-2 > div > aside {
+      margin: auto 0;
+      height: 30vw; } }
+
+/* =============
+    section 3
+============= */
+#i-section-3 {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 80px;
+  position: relative; }
+  #i-section-3 h2, #i-section-3 h3, #i-section-3 h4, #i-section-3 h5, #i-section-3 h6 {
+    font-family: "brandon-grotesque", sans-serif; }
+  #i-section-3::after {
+    display: block;
+    position: absolute;
+    width: 30vw;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.1;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    content: none; }
     @media (min-width: 704px) {
-      #health-image div {
-        top: -645px;
-        background-size: 45%;
-        height: 80vh;
-        left: 250px;
-        z-index: 5; } }
-    @media (min-width: 992px) {
-      #health-image div {
-        background-size: 35%;
-        left: 417px;
-        padding-top: 70px;
-        margin-top: 70px; } }
-  #health-image #health-tablet-bg {
-    display: none; }
+      #i-section-3::after {
+        content: ''; } }
+  #i-section-3 > div section {
+    width: 100vw;
+    position: relative; }
     @media (min-width: 704px) {
-      #health-image #health-tablet-bg {
+      #i-section-3 > div section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "image text";
+        width: 100%;
+        height: 800px; } }
+    #i-section-3 > div section article {
+      grid-area: text;
+      margin: 0px 16px;
+      margin-bottom: 30px; }
+      @media (min-width: 704px) {
+        #i-section-3 > div section article {
+          margin: 0px 56px; } }
+      @media (min-width: 992px) {
+        #i-section-3 > div section article {
+          margin: 0px 160px; } }
+      @media (min-width: 704px) {
+        #i-section-3 > div section article {
+          margin-left: 60px; } }
+      #i-section-3 > div section article::after {
         display: block;
         position: absolute;
-        background-color: rgba(252, 226, 211, 0.55);
-        height: 80vh;
-        width: 40vw;
-        top: 850px;
-        right: -200px;
-        background-image: none;
-        z-index: 1; } }
-    @media (min-width: 992px) {
-      #health-image #health-tablet-bg {
-        height: 70vh;
-        width: 25vw;
-        top: 1060px; } }
-
-a:link, a:visited {
-  color: #F5BFA0; }
-
-a:hover, a:active {
-  border-bottom: 4px solid #F5BFA0; }
-
-/* =============
-    pig health matters
-============= */
-#children {
-  background-color: rgba(252, 226, 211, 0.55); }
-  @media (min-width: 704px) {
-    #children {
-      padding-top: 70px;
-      padding-bottom: 70px;
-      margin-bottom: 40px; }
-      #children div {
-        padding-left: 18px;
-        padding-right: 18px; }
-        #children div h2 {
-          text-align: center; } }
-  @media (min-width: 992px) {
-    #children {
-      margin-left: 95px;
-      margin-right: 95px; } }
-
-a:link, a:visited {
-  color: #F5BFA0; }
-
-a:hover, a:active {
-  border-bottom: 4px solid #F5BFA0; }
-
-/* =============
-    pig health matters
-============= */
-#wallet {
-  background-color: rgba(252, 226, 211, 0.55);
-  margin-top: 200px;
-  position: relative;
-  z-index: 1; }
-  @media (min-width: 704px) {
-    #wallet {
-      background-color: rgba(0, 0, 0, 0);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "left left right";
-      margin-top: -40px;
-      margin-bottom: 300px; }
-      #wallet div {
-        grid-area: left;
-        margin-left: 25px;
-        margin-right: 30px;
-        z-index: 2; }
-        #wallet div article {
-          background-color: rgba(252, 226, 211, 0.55);
-          padding-top: 40px;
-          padding-bottom: 40px;
-          padding-right: 40px;
-          margin-bottom: -100px;
-          padding-left: 40px; } }
-  @media (min-width: 992px) {
-    #wallet {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "left left left left right" "left2 left2 left2 . .";
-      margin-bottom: 200px;
-      padding-bottom: 0; }
-      #wallet div {
-        grid-area: left; } }
-  #wallet h1 {
-    font-size: 9.375rem;
-    position: absolute;
-    display: block;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    z-index: 100;
-    right: 0;
-    opacity: 0.1;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap; }
-    @media (min-width: 704px) {
-      #wallet h1 {
-        font-size: 15.625rem; } }
-    @media (min-width: 992px) {
-      #wallet h1 {
-        font-size: 25rem; } }
-  #wallet #wallet-image {
-    position: relative;
-    background-image: url("../img/Risks/wallet-image.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 70vw;
-    bottom: 450px;
-    left: 30px; }
-    @media (min-width: 704px) {
-      #wallet #wallet-image {
-        background-size: 57%;
-        background-color: rgba(0, 0, 0, 0);
-        left: 305px;
-        bottom: 97px;
-        z-index: 1; } }
-    @media (min-width: 992px) {
-      #wallet #wallet-image {
-        background-size: 45%;
-        left: 470px;
-        bottom: 0px;
-        top: 140px; } }
-  #wallet #wallet-extra-text {
-    position: relative;
-    top: 400px; }
-    @media (min-width: 704px) {
-      #wallet #wallet-extra-text {
-        position: relative;
-        display: block;
-        left: 250px;
-        top: 600px;
-        padding-left: 50px; } }
-    @media (min-width: 992px) {
-      #wallet #wallet-extra-text {
-        top: 900px;
-        margin-left: 240px;
-        margin-right: 240px; } }
-  #wallet #wallet-extra-text-2 {
-    display: none; }
-    @media (min-width: 704px) {
-      #wallet #wallet-extra-text-2 {
-        display: none; } }
-    @media (min-width: 992px) {
-      #wallet #wallet-extra-text-2 {
-        display: block;
-        position: relative;
-        top: -290px;
-        left: -48px;
-        margin-right: 70px;
-        margin-left: 70px;
-        background-color: rgba(0, 0, 0, 0);
-        grid-area: left2; }
-        #wallet #wallet-extra-text-2 article {
-          background-color: rgba(0, 0, 0, 0); } }
-  #wallet #wallet-image-2 {
-    display: none; }
-    @media (min-width: 704px) {
-      #wallet #wallet-image-2 {
-        display: block;
-        position: relative;
-        background-image: url("../img/Risks/wallet-image-2.png");
-        background-size: 70%;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 60vw;
-        top: 500px;
-        right: 60px;
-        z-index: 1; } }
-    @media (min-width: 992px) {
-      #wallet #wallet-image-2 {
-        top: 600px; } }
-
-a:link, a:visited {
-  color: #F5BFA0; }
-
-a:hover, a:active {
-  border-bottom: 4px solid #F5BFA0; }
+        width: 100vw;
+        height: 120vw;
+        background-color: #000;
+        opacity: 0.1;
+        z-index: -1;
+        left: 0;
+        bottom: 10px;
+        content: ''; }
+        @media (min-width: 704px) {
+          #i-section-3 > div section article::after {
+            content: none; } }
+    #i-section-3 > div section aside {
+      grid-area: image;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 80vw;
+      filter: grayscale(1); }
+      @media (min-width: 704px) {
+        #i-section-3 > div section aside {
+          height: auto; } }
+    #i-section-3 > div section #smith {
+      background-image: url("https://www.nationalgeographic.com/content/dam/news/photos/000/842/84231.ngsversion.1422286609346.adapt.1900.1.jpg");
+      margin-bottom: 100px; }
+    #i-section-3 > div section #walter {
+      background-image: url("https://www.hachettebookgroup.com/wp-content/uploads/2017/06/jenkinsandwalter.jpg?resize=500%2C513"); }

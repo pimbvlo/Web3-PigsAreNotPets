@@ -46,23 +46,24 @@
   }
 
   h1 {
-      font-size: rem-calc(150);
-             position: absolute;
-             display: block;
-             writing-mode: vertical-rl;
-             text-orientation: mixed;
-             z-index: 100;
-             right: 0;
-             opacity: 0.1;
-             top: 50%;
-             transform: translateY(-50%);
-             white-space: nowrap;
-             @include md {
-                 font-size: rem-calc(250);
-             }
-             @include lg {
-                 font-size: rem-calc(400);  }
-             }
+     font-size: rem-calc(150);
+     // overflow: hidden;
+     position: absolute;
+     display: block;
+     writing-mode: vertical-rl;
+     text-orientation: mixed;
+     z-index: 100;
+     left: 0;
+     opacity: 0.1;
+     top: 50%;
+     transform: translateY(-50%);
+     white-space: nowrap;
+     @include md {
+         font-size: rem-calc(250);
+     }
+     @include lg {
+         font-size: rem-calc(400);  }
+     }
 
   #wallet-image {
     position: relative;

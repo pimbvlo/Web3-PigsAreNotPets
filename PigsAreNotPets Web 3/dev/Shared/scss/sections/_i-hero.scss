@@ -8,6 +8,11 @@
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    h2,h3,h4,h5,h6{
+        font-family: "brandon-grotesque", sans-serif;
+
+    }
+
     video{
         position: absolute;
         z-index: 0;

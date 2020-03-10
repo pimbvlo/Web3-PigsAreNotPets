@@ -13,7 +13,8 @@ footer {
         // top: 0px;
         // right: 0px;
         height: 16px;
-        background-color: $orange;
+        background-color: $black;
+        opacity: 0.3;
     }
 
     article {
@@ -140,7 +141,7 @@ footer {
         fill: none;
         stroke-miterlimit: 10;
         stroke-width: 8px;
-        stroke: $orange;
+        stroke: $black;
         @include md {
             width: 768px;
             bottom: -104px;

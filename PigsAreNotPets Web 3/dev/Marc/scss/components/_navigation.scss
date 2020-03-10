@@ -21,36 +21,50 @@ nav {
             @include lg {}
 
             h6 {
-                font-family: "sofia-pro", sans-serif;
                 background-color: $blank;
                 border: none;
                 cursor: pointer;
-                font-size: rem-calc(28);
                 // height: 100%;
                 padding: 10px 0;
                 text-align: right;
-                transition: 0.25s;
                 width: 100%;
                 margin-bottom: 16px;
                 text-decoration: none;
                 color: $white;
-                @include md {
-                    font-size: rem-calc(32);
-                    margin-bottom: 24px;
-                }
-                @include lg {
-                    font-size: rem-calc(40);
-                    margin-bottom: 32px;
-                }
 
                 a {
+                    font-family: "sofia-pro", sans-serif;
+
+                    text-transform: uppercase;
+                    letter-spacing: rem-calc(0.75);
+                    font-weight: 700;
                     text-decoration: none;
+                    transition: 0.25s;
+                    font-size: rem-calc(28);
+                    @include md {
+                        font-size: rem-calc(32);
+                        margin-bottom: 24px;
+                        letter-spacing: rem-calc(1);
+
+                    }
+                    @include lg {
+                        font-size: rem-calc(40);
+                        margin-bottom: 32px;
+                        letter-spacing: rem-calc(1.25);
+
+                    }
                     color: $white;
                 }
-            }
 
-            button:hover {
-                color: $charcoal;
+                a:link,
+                a:visited {
+                    color: $white;
+                }
+
+                a:active,
+                a:hover {
+                    border-bottom: 4px solid $white;
+                }
             }
         }
 

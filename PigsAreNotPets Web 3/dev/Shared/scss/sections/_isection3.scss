@@ -2,43 +2,102 @@
     section 3
 ============= */
 #i-section-3 {
-    margin-bottom: 30px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+    position: relative;
+h2,h3,h4,h5,h6{
+    font-family: "brandon-grotesque", sans-serif;
+
+}
+
+
+    &::after {
+        display: block;
+        position: absolute;
+        width: 30vw;
+        height: 100%;
+        background-color: $black;
+        opacity: 0.1;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        content: none;
+        @include md {
+            content: '';
+        }
+    }
+
+
 
     > div {
         section {
-            width: 90vw;
+            width: 100vw;
             position: relative;
 
+
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "image text";
+                width: 100%;
+                height: 800px;
+            }
+
+
+
             article {
+                grid-area: text;
                 @include standard-margin;
+                margin-bottom: 30px;
+                @include md {
+                    margin-left: 60px;
+                }
+
+
 
                 &::after {
                     display: block;
                     position: absolute;
                     width: 100vw;
-                    height: 140vw;
-                    // background-color: $black;
-                    // opacity: 0.1;
+                    height: 120vw;
+                    background-color: $black;
+                    opacity: 0.1;
                     z-index: -1;
                     left: 0;
                     bottom: 10px;
                     content: '';
+                    @include md {
+                        content: none;
+                    }
                 }
             }
 
+
+
             aside {
+                grid-area: image;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                width: 100vw;
+                width: 100%;
                 height: 80vw;
                 filter: grayscale(1);
+                @include md {
+                    // width: 20vw;
+                    height: auto;
+                }
             }
+
+
 
             #smith {
                 background-image: url("https://www.nationalgeographic.com/content/dam/news/photos/000/842/84231.ngsversion.1422286609346.adapt.1900.1.jpg");
-                margin-bottom: 40px;
+                margin-bottom: 100px;
             }
+
+
 
             #walter {
                 background-image: url("https://www.hachettebookgroup.com/wp-content/uploads/2017/06/jenkinsandwalter.jpg?resize=500%2C513");

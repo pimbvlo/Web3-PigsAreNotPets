@@ -2,6 +2,11 @@
     section 2
 ============= */
 #i-section-2 {
+    h2,h3,h4,h5,h6{
+        font-family: "brandon-grotesque", sans-serif;
+
+    }
+
     > div {
         // display: grid;
         // grid-template-rows: auto 50vw;
