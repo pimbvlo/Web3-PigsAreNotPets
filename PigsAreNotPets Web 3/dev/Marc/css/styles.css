@@ -1141,8 +1141,9 @@ footer svg g {
 @media (min-width: 992px) {
   #wallet {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "left left left left right" "left2 left2 left2 . ." "left3 left3 . . .";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "left left left left right" "left2 left2 left2 . .";
+    margin-bottom: 200px;
     padding-bottom: 0;
   }
   #wallet div {
@@ -1157,11 +1158,6 @@ footer svg g {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
-  }
-  #wallet > #health-extra-text {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
   }
   #wallet > #health-extra-text-2 {
     -ms-grid-row: 2;
@@ -1238,7 +1234,7 @@ footer svg g {
 }
 @media (min-width: 992px) {
   #wallet #wallet-extra-text {
-    top: 700px;
+    top: 900px;
     margin-left: 240px;
     margin-right: 240px;
   }
@@ -1352,5 +1348,10 @@ footer svg g {
     top: 500px;
     right: 60px;
     z-index: 1;
+  }
+}
+@media (min-width: 992px) {
+  #wallet #wallet-image-2 {
+    top: 600px;
   }
 }

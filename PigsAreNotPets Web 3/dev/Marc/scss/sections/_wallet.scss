@@ -33,12 +33,11 @@
 
   @include lg{
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
     "left left left left right"
-    "left2 left2 left2 . ."
-    "left3 left3 . . .";
-    // margin-bottom: 200px;
+    "left2 left2 left2 . .";
+    margin-bottom: 200px;
     padding-bottom: 0;
     div{
       grid-area: left;
@@ -99,7 +98,7 @@
       padding-left: 50px;
     }
     @include lg{
-      top: 700px;
+      top: 900px;
       margin-left: 240px;
       margin-right: 240px;
     }
@@ -139,6 +138,9 @@
       top: 500px;
       right: 60px;
       z-index: 1;
+    }
+    @include lg{
+      top: 600px;
     }
 
   }
