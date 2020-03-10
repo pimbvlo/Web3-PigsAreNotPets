@@ -12,6 +12,7 @@
             article {
                 @include standard-margin;
 
+
                 &::after {
                     display: block;
                     position: absolute;
@@ -33,11 +34,13 @@
                 width: 100vw;
                 height: 80vw;
                 filter: grayscale(1);
+
             }
 
             #smith {
                 background-image: url("https://www.nationalgeographic.com/content/dam/news/photos/000/842/84231.ngsversion.1422286609346.adapt.1900.1.jpg");
                 margin-bottom: 40px;
+
             }
 
             #walter {
