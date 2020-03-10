@@ -1,0 +1,32 @@
+/* =============
+    section 2
+============= */
+#i-section-2 {
+    > div {
+        // display: grid;
+        // grid-template-rows: auto 50vw;
+
+        @include md{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        > article {
+            > div {}
+        }
+
+        > aside {
+            @include standard-margin;
+            background-repeat: no-repeat;
+            background-image: url("../img/Home/PigsNotPets.svg");
+            background-size: contain;
+            background-position: center;
+            width: auto;
+            height: 80vw;
+            @include md {
+                margin: auto 0;
+                height: 30vw;
+            }
+        }
+    }
+}
