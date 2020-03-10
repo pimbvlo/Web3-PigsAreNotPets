@@ -45,7 +45,7 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/global/header/logo.svg": {
+	"/deploy/img/Global/Header/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
@@ -251,6 +251,142 @@
 		"oAP": "/deploy/sanctuaries.html",
 		"oF": 0
 		},
+	"/dev/Marc/css/fonts/HelveticaOT.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/Marc/css/fonts/HelveticaOT.woff",
+		"oF": 0
+		},
+	"/dev/Marc/css/fonts/HelveticaOT.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/Marc/css/fonts/HelveticaOT.woff2",
+		"oF": 0
+		},
+	"/dev/Marc/css/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/Marc/css/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dev/Marc/img/pig-mud-hero.png": {
+		"ft": 32768,
+		"iS": 846430,
+		"oA": 0,
+		"oAP": "/dev/Marc/img/pig-mud-hero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/dev/Marc/img/sick-pig.png": {
+		"ft": 32768,
+		"iS": 104381,
+		"oA": 0,
+		"oAP": "/dev/Marc/img/sick-pig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/dev/Marc/img/wallet-image-2.png": {
+		"ft": 32768,
+		"iS": 109432,
+		"oA": 0,
+		"oAP": "/dev/Marc/img/wallet-image-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/dev/Marc/img/wallet-image.png": {
+		"ft": 32768,
+		"iS": 94575,
+		"oA": 0,
+		"oAP": "/dev/Marc/img/wallet-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/dev/Marc/js/burger/burger-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/burger/burger-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Marc/js/burger/burger-mouseenter.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/burger/burger-mouseenter-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Marc/js/burger/burger-mouseleave.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/burger/burger-mouseleave-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Marc/js/burger/burger.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/burger/burger-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Marc/js/navigation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/Marc/js/rellax.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/Marc/js/rellax-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/Marc/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
@@ -262,9 +398,9 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/Marc/risks.kit": {
+	"/dev/Marc/risks.html": {
 		"cB": 0,
-		"ft": 2048,
+		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/risks.html",
@@ -335,6 +471,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Marc/scss/components/_nav-background.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/components/_nav-background.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/Marc/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -344,6 +493,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Marc/scss/components/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Marc/scss/components/_scrim.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/components/_scrim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -396,6 +558,58 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/Marc/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Marc/scss/sections/_children.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/sections/_children.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Marc/scss/sections/_pig-health.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/sections/_pig-health.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Marc/scss/sections/_r-hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/sections/_r-hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/Marc/scss/sections/_wallet.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/Marc/scss/sections/_wallet.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -815,6 +1029,16 @@
 		"oAP": "/dev/Matt/trash.html",
 		"oF": 0
 		},
+	"/dev/Shared/css/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/Shared/css/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/dev/Shared/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1175,6 +1399,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/Shawn/css/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/Shawn/css/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/dev/Shawn/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1273,17 +1507,6 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/Shawn/js/waypoints.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/Shawn/js/waypoints-min.js",
-		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

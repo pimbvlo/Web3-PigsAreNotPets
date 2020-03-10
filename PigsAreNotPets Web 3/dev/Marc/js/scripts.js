@@ -1,16 +1,17 @@
-console.log("Marc");
+// @codekit-prepend "navigation.js";
 
-// @prepros-prepend "navigation.js";
+// @codekit-prepend "burger/burger.js";
+// @codekit-prepend "burger/burger-mouseenter.js";
+// @codekit-prepend "burger/burger-mouseleave.js";
+// @codekit-prepend "burger/burger-click.js";
 
-// @prepros-prepend "burger/burger.js";
-// @prepros-prepend "burger/burger-mouseenter.js";
-// @prepros-prepend "burger/burger-mouseleave.js";
-// @prepros-prepend "burger/burger-click.js";
+// @codekit-prepend "rellax.js";
 
 
 
-// $(document).ready(function() {
-//     gsap.registerPlugin(ScrollToPlugin);
-//
-//     console.log("ready!");
-// });
+
+$(document).ready(function() {
+    gsap.registerPlugin(ScrollToPlugin);
+
+    console.log("ready!");
+});
