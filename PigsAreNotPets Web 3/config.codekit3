@@ -55,6 +55,14 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/Home/ArkansasFeralHogProblem.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Home/ArkansasFeralHogProblem.mp4",
+		"oF": 0
+		},
 	"/deploy/img/Home/PigsNotPets.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -118,6 +126,50 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Risks/pig-mud-hero.png": {
+		"ft": 32768,
+		"iS": 846430,
+		"oA": 0,
+		"oAP": "/deploy/img/Risks/pig-mud-hero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Risks/sick-pig.png": {
+		"ft": 32768,
+		"iS": 104381,
+		"oA": 0,
+		"oAP": "/deploy/img/Risks/sick-pig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Risks/wallet-image-2.png": {
+		"ft": 32768,
+		"iS": 109432,
+		"oA": 0,
+		"oAP": "/deploy/img/Risks/wallet-image-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Risks/wallet-image.png": {
+		"ft": 32768,
+		"iS": 94575,
+		"oA": 0,
+		"oAP": "/deploy/img/Risks/wallet-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/Sanctuaries/Hero/Hero.jpg": {
@@ -276,50 +328,6 @@
 		"oAP": "/dev/Marc/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/dev/Marc/img/pig-mud-hero.png": {
-		"ft": 32768,
-		"iS": 846430,
-		"oA": 0,
-		"oAP": "/dev/Marc/img/pig-mud-hero.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/dev/Marc/img/sick-pig.png": {
-		"ft": 32768,
-		"iS": 104381,
-		"oA": 0,
-		"oAP": "/dev/Marc/img/sick-pig.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/dev/Marc/img/wallet-image-2.png": {
-		"ft": 32768,
-		"iS": 109432,
-		"oA": 0,
-		"oAP": "/dev/Marc/img/wallet-image-2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/dev/Marc/img/wallet-image.png": {
-		"ft": 32768,
-		"iS": 94575,
-		"oA": 0,
-		"oAP": "/dev/Marc/img/wallet-image.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/dev/Marc/js/burger/burger-click.js": {
 		"bF": 0,

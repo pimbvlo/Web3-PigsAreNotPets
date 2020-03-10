@@ -46,27 +46,27 @@
   }
 
   h1 {
-    position: absolute;
-    transform: rotate(90deg);
-    left: 50px;
-    font-size: 148px;
-    opacity: 15%;
-    top: 300px;
-    @include md {
-      left: 430px;
-      top: 150px;
-      z-index: 5;
-      font-size: 180px;
-    }
-    @include lg{
-      font-size: 270px;
-      left: 775px;
-    }
-  }
+      font-size: rem-calc(150);
+             position: absolute;
+             display: block;
+             writing-mode: vertical-rl;
+             text-orientation: mixed;
+             z-index: 100;
+             right: 0;
+             opacity: 0.1;
+             top: 50%;
+             transform: translateY(-50%);
+             white-space: nowrap;
+             @include md {
+                 font-size: rem-calc(250);
+             }
+             @include lg {
+                 font-size: rem-calc(400);  }
+             }
 
   #wallet-image {
     position: relative;
-    background-image: url("../img/wallet-image.png");
+    background-image: url("../img/Risks/wallet-image.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@
     @include md{
       display: block;
       position: relative;
-      background-image: url("../img/wallet-image-2.png");
+      background-image: url("../img/Risks/wallet-image-2.png");
       background-size: 70%;
       background-position: center;
       background-repeat: no-repeat;

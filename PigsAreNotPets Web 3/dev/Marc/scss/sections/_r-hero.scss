@@ -1,14 +1,14 @@
 /* =============
     Hero
 ============= */
-#hero {
+#r-hero {
     align-items: flex-end;
-    background-image: url("../img/pig-mud-hero.png");
+    background-image: url("../img/Risks/pig-mud-hero.png");
     background-position: 30% 70%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 90vh;
+    height: 95vh;
     @include md {
         background-position: 30% 70%;
     }
